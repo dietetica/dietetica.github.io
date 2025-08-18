@@ -1,4 +1,65 @@
-<!doctypehtml><html lang=es><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><meta content="Dietética Axel y Javi"property=og:title><meta content="🛵 Te llevamos el pedido a tu casa"property=og:description><meta content=https://dieteticaaxelyjavi.github.io/img/logo.png property=og:image><meta content=606 property=og:image:width><meta content=606 property=og:image:height><meta content="Dietética Axel y Javi"property=og:site_name><meta content=https://dietetica.github.io/ property=og:url><meta content=website property=og:type><title>Dietética Axel y Javi</title><link href=img/almendras.png rel=icon type=image/png><link href=css/estilos.css rel=stylesheet><header class=header><img alt="Logo de la Dietética Axel y Javi"src=img/logo.png class=logo></header><div class=filter-container><div class=filter-input-wrapper><input autocomplete=off id=filter-input placeholder=Buscar...> <span id=clear-filter>×</span></div><div class=tags-container id=tags-container></div></div><ul class=productos-lista></ul><a aria-label="Enviar mensaje por WhatsApp"class=fab href="https://api.whatsapp.com/send/?phone=5491133417868"target=_blank><img alt="Icono de WhatsApp"src=img/whatsapp.png></a><script src=js/main.js></script><script>document.addEventListener("contextmenu",function(e){e.preventDefault()},!1)</script><script>document.addEventListener('DOMContentLoaded', () => {
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Etiquetas meta de Open Graph -->
+    <meta property="og:title" content="Dietética Axel y Javi" />
+    <meta property="og:description" content="🛵 Te llevamos el pedido a tu casa" />
+    <meta property="og:image" content="https://dieteticaaxelyjavi.github.io/img/logo.png" />
+    <meta property="og:image:width" content="606" />
+    <meta property="og:image:height" content="606" />
+    <meta property="og:site_name" content="Dietética Axel y Javi" />
+    <meta property="og:url" content="https://dietetica.github.io/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Title -->
+    <title>Dietética Axel y Javi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/almendras.png"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- Encabezado con logo -->
+<header class="header">
+    <img src="img/logo.png" alt="Logo de la Dietética Axel y Javi" class="logo">
+</header>
+
+<!-- Filtro de búsqueda -->
+<div class="filter-container">
+    <div class="filter-input-wrapper">
+        <input type="text" id="filter-input" placeholder="Buscar..." autocomplete="off">
+        <span id="clear-filter">&times;</span>
+    </div>
+
+    <div class="tags-container" id="tags-container"></div>
+</div>
+
+<!-- Lista de productos -->
+<ul class="productos-lista"></ul>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://api.whatsapp.com/send/?phone=5491133417868" class="fab" target="_blank"
+   aria-label="Enviar mensaje por WhatsApp">
+    <img src="img/whatsapp.png" alt="Icono de WhatsApp">
+</a>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+
+<script>
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+}, false);
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
     cargarEtiquetasDesdeCSV();
 });
 
@@ -161,4 +222,9 @@ function inicializarEventosTags() {
     const recalcular = () => requestAnimationFrame(calcularLineas);
     recalcular();
     window.addEventListener('resize', recalcular);
-}</script>
+}
+
+</script>
+
+</body>
+</html>
