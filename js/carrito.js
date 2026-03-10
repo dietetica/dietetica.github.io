@@ -1,1 +1,540 @@
-const _0x1bb5c4=_0x2e57;function _0x2e57(_0x483c03,_0x1b9b32){const _0x1d7276=_0x1d72();return _0x2e57=function(_0x2e57d6,_0x392e6e){_0x2e57d6=_0x2e57d6-0xfd;let _0x5bda14=_0x1d7276[_0x2e57d6];return _0x5bda14;},_0x2e57(_0x483c03,_0x1b9b32);}function _0x1d72(){const _0x55f0c7=['insertBefore','subtotal-carrito','appendChild','scrollY','botonCerrarCarrito','subtotalCarrito','parentNode','prototype','forEach','10px','https://api.whatsapp.com/send?phone=','panelCarrito','getItem','%0ASubtotal:\x20','Enviar\x20pedido\x20por\x20WhatsApp','3430350EuRNdz','Configuración\x20👇\x0aCosto\x20de\x20envío:\x20$','data-src','envioCarrito','actualizarBotonesAgregar','detallesPedido','actualizarUI','add','closest','costoEnvio','barraMinimalista','total-carrito','from','disabled','totalPedido','none','4053tyUUyO','_blank','addEventListener','boton-enviar-pedido','boton-deshabilitado','\x22\x20alt=\x22','abierto','>+</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22precio-item-carrito\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','scrollX','boton-habilitado','mostrarConfirmacionAgregado','json','https://dietetica.github.io/data/config.json','innerHTML','opacity','button','enviarPedidoWhatsApp','display','11508530ocjELc','transform','cantidad','filter','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22controles-precio-item-carrito\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22contenedor-boton\x20contenedor-eliminar\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22eliminar\x22>🗑️</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22contenedor-boton\x20contenedor-disminuir\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22disminuir\x22\x20','overlayCarrito','Pedido\x20mínimo:\x20','left','aumentar','calcularEnvio','querySelectorAll','unidades_precios','inicializarEventos','innerHeight','push','info','envioGratisDesde','1408JHrHnV','getElementById','1009322TlxJvB','titulo','DOMContentLoaded','245NEVqFt','aumentarCantidad','pageYOffset','total-pedido','toLowerCase','\x20para\x20completar\x20el\x20pedido\x20mínimo','listaCarrito','indiceUnidad','height','105522cKdHtR','lista-carrito','createElement','1565895FKEOEF','top','slice','detalles-pedido','contains','carrito','cerrarCarrito','en-carrito','overflow','activo','div','%0A','absolute','target','guardarEnLocalStorage','querySelector','parse','abrirCarrito','bottom','dataset','agregarProducto','botonEnviar','click','envio-gratis','getAttribute','unidad','panel-carrito','transition','pageXOffset','src','items','flex','.producto-item','translateX(-95%)','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22contenedor-boton\x20contenedor-aumentar\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22aumentar\x22\x20','disminuirCantidad','classList','zIndex','body','\x0aPedido\x20mínimo:\x20$','1029080iGtrtI','\x0aEnvío\x20gratis\x20desde:\x20$','.producto-titulo','barra-minimalista','>-</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22controles-unidad-item-carrito\x22>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22unidad-item-carrito\x22>','.item-carrito','totalCarrito','find','calcularSubtotal','\x0a<div\x20style=\x22position:\x20relative;\x20height:\x20100%;\x20padding:\x200px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22text-align:\x20center;\x20color:\x20#777;\x20padding:\x2020px\x200px\x20100px\x200px;\x20position:\x20absolute;\x20top:\x2050%;\x20left:\x2050%;\x20transform:\x20translate(-50%,\x20-50%);\x20width:\x20100%;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Tu\x20pedido\x20está\x20vacío\x0a\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22gatitos-animados\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20src=\x22img/gatitos.png\x22\x20alt=\x22Gatitos\x22>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','precio','.boton-agregar','error','pedidoMinimo','cerrar-carrito','setItem','className','overlay-carrito','length','&text=','actualizarBotonEnvio','disminuir','reduce','1xHnuHe','\x22\x20onerror=\x22this.src=\x27img/sin-imagen.png\x27\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22contenido-item-carrito\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22titulo-item-carrito\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>','textContent','boton-carrito-minimalista','Total:\x20','stringify','mensaje-pedido-minimo','botonCarritoMinimalista','style','cargarCostoEnvio','\x20producto','inicializarElementos','remove'];_0x1d72=function(){return _0x55f0c7;};return _0x1d72();}(function(_0x2d929b,_0x1606a2){const _0x2c226f=_0x2e57,_0x3aaac6=_0x2d929b();while(!![]){try{const _0x4655bf=parseInt(_0x2c226f(0x198))/0x1*(parseInt(_0x2c226f(0x14a))/0x2)+-parseInt(_0x2c226f(0x125))/0x3*(parseInt(_0x2c226f(0x148))/0x4)+parseInt(_0x2c226f(0x159))/0x5+-parseInt(_0x2c226f(0x156))/0x6*(-parseInt(_0x2c226f(0x14d))/0x7)+parseInt(_0x2c226f(0x181))/0x8+parseInt(_0x2c226f(0x115))/0x9+-parseInt(_0x2c226f(0x137))/0xa;if(_0x4655bf===_0x1606a2)break;else _0x3aaac6['push'](_0x3aaac6['shift']());}catch(_0x13b282){_0x3aaac6['push'](_0x3aaac6['shift']());}}}(_0x1d72,0x4d55d));function encontrarElementoPorTexto(_0xab8d89,_0x226bc9){const _0x275410=_0x2e57,_0x4fdfe2=document[_0x275410(0x141)](_0xab8d89);return Array['from'](_0x4fdfe2)[_0x275410(0x188)](_0x5cdb62=>_0x5cdb62[_0x275410(0x19a)]['trim']()[_0x275410(0x151)]()===_0x226bc9['toLowerCase']());}!NodeList['prototype'][_0x1bb5c4(0x188)]&&(NodeList[_0x1bb5c4(0x10d)][_0x1bb5c4(0x188)]=function(_0x2fcf66){const _0x57984d=_0x1bb5c4;return Array[_0x57984d(0x121)](this)[_0x57984d(0x188)](_0x2fcf66);});async function obtenerConfiguracion(){const _0x440ee7=_0x1bb5c4;try{const _0x4f9dda=0x1388,_0x463316=0x61a8,_0x3c8b5b=0xea60,_0x75b4a2=_0x440ee7(0x131),_0x1b0d73=await fetch(_0x75b4a2),_0x1981c6=await _0x1b0d73[_0x440ee7(0x130)]();return console[_0x440ee7(0x146)](_0x440ee7(0x116)+_0x1981c6[_0x440ee7(0x11e)]+_0x440ee7(0x180)+_0x1981c6[_0x440ee7(0x18e)]+_0x440ee7(0x182)+_0x1981c6[_0x440ee7(0x147)]),{'costoEnvio':parseInt(_0x1981c6['costoEnvio'])||_0x4f9dda,'pedidoMinimo':parseInt(_0x1981c6['pedidoMinimo'])||_0x463316,'envioGratisDesde':parseInt(_0x1981c6[_0x440ee7(0x147)])||_0x3c8b5b};}catch(_0x410fd6){return console[_0x440ee7(0x18d)]('Error\x20al\x20cargar\x20la\x20configuración:',_0x410fd6),{'costoEnvio':costoEnvioDefault,'pedidoMinimo':pedidoMinimoDefault,'envioGratisDesde':envioGratisDesdeDefault};}}class Carrito{constructor(){const _0x54f6e5=_0x1bb5c4;this[_0x54f6e5(0x177)]=JSON[_0x54f6e5(0x169)](localStorage[_0x54f6e5(0x112)](_0x54f6e5(0x15e)))||[],this[_0x54f6e5(0x11e)]=0x0,this['pedidoMinimo']=0x0,this['inicializarElementos'](),this[_0x54f6e5(0x143)](),this[_0x54f6e5(0x11b)](),this['cargarConfiguracion']();}[_0x1bb5c4(0x104)](){const _0x1a664f=_0x1bb5c4;this['panelCarrito']=document[_0x1a664f(0x149)](_0x1a664f(0x173)),this[_0x1a664f(0x13c)]=document[_0x1a664f(0x149)](_0x1a664f(0x192)),this[_0x1a664f(0x153)]=document[_0x1a664f(0x149)](_0x1a664f(0x157)),this[_0x1a664f(0x10b)]=document[_0x1a664f(0x149)](_0x1a664f(0x107)),this[_0x1a664f(0x118)]=document[_0x1a664f(0x149)]('envio-carrito'),this[_0x1a664f(0x187)]=document[_0x1a664f(0x149)](_0x1a664f(0x120)),this[_0x1a664f(0x16e)]=document[_0x1a664f(0x149)](_0x1a664f(0x128)),this[_0x1a664f(0x10a)]=document['getElementById'](_0x1a664f(0x18f)),this[_0x1a664f(0x11f)]=document[_0x1a664f(0x149)](_0x1a664f(0x184)),this[_0x1a664f(0x100)]=document[_0x1a664f(0x149)](_0x1a664f(0x19b)),this[_0x1a664f(0x123)]=document['getElementById'](_0x1a664f(0x150)),this[_0x1a664f(0x11a)]=document['getElementById'](_0x1a664f(0x15c));}[_0x1bb5c4(0x143)](){const _0x371792=_0x1bb5c4;this['overlayCarrito'][_0x371792(0x127)]('click',()=>this['cerrarCarrito']()),this['botonCerrarCarrito'][_0x371792(0x127)]('click',()=>this[_0x371792(0x15f)]()),this['botonEnviar'][_0x371792(0x127)](_0x371792(0x16f),()=>this['enviarPedidoWhatsApp']()),this[_0x371792(0x100)][_0x371792(0x127)]('click',()=>this[_0x371792(0x16a)]()),this[_0x371792(0x153)][_0x371792(0x127)](_0x371792(0x16f),_0x1bfa53=>{const _0x9c518e=_0x371792,_0x338727=_0x1bfa53[_0x9c518e(0x166)][_0x9c518e(0x11d)]('.contenedor-boton');if(!_0x338727)return;const _0x4ec887=_0x338727[_0x9c518e(0x168)](_0x9c518e(0x134));if(!_0x4ec887||_0x4ec887['disabled'])return;const _0x4bce11=_0x1bfa53[_0x9c518e(0x166)]['closest'](_0x9c518e(0x186))[_0x9c518e(0x16c)]['id'];if(_0x4ec887[_0x9c518e(0x17d)][_0x9c518e(0x15d)](_0x9c518e(0x196)))this[_0x9c518e(0x17c)](_0x4bce11);else{if(_0x4ec887[_0x9c518e(0x17d)][_0x9c518e(0x15d)](_0x9c518e(0x13f)))this[_0x9c518e(0x14e)](_0x4bce11);else _0x4ec887[_0x9c518e(0x17d)][_0x9c518e(0x15d)]('eliminar')&&this['eliminarProducto'](_0x4bce11);}});}[_0x1bb5c4(0x119)](){const _0x363fc3=_0x1bb5c4,_0x308465=document[_0x363fc3(0x141)](_0x363fc3(0x18c));_0x308465[_0x363fc3(0x10e)](_0x52610b=>{const _0x1ca13a=_0x363fc3,_0x5d936f=_0x52610b['dataset']['id'],_0x28d245=this[_0x1ca13a(0x177)]['find'](_0x4e95b0=>_0x4e95b0['id']===_0x5d936f);_0x28d245?_0x52610b['classList'][_0x1ca13a(0x11c)](_0x1ca13a(0x160)):_0x52610b[_0x1ca13a(0x17d)]['remove'](_0x1ca13a(0x160));});}[_0x1bb5c4(0x16d)](_0xd6286b,_0x42df60=null){const _0x158606=_0x1bb5c4,_0x528e16=this[_0x158606(0x177)]['find'](_0x34bc63=>_0x34bc63['id']===_0xd6286b['id']);if(_0x528e16){}else this[_0x158606(0x177)][_0x158606(0x145)]({'id':_0xd6286b['id'],'titulo':_0xd6286b['titulo'],'precio':_0xd6286b[_0x158606(0x18b)],'unidad':_0xd6286b[_0x158606(0x172)],'unidades_precios':_0xd6286b[_0x158606(0x142)]||[],'indiceUnidad':_0xd6286b[_0x158606(0x154)]||0x0,'cantidad':0x1}),_0x42df60&&this[_0x158606(0x12f)](_0xd6286b[_0x158606(0x14b)],_0x42df60);this[_0x158606(0x167)](),this[_0x158606(0x11b)](),this[_0x158606(0x119)]();}['eliminarProducto'](_0x54fd97){const _0x46cbd3=_0x1bb5c4;this[_0x46cbd3(0x177)]=this[_0x46cbd3(0x177)][_0x46cbd3(0x13a)](_0x2a59ad=>_0x2a59ad['id']!==_0x54fd97),this['guardarEnLocalStorage'](),this[_0x46cbd3(0x11b)]();const _0x393698=this[_0x46cbd3(0x189)]();this[_0x46cbd3(0x195)](_0x393698),this[_0x46cbd3(0x119)]();}[_0x1bb5c4(0x14e)](_0xe6dde0){const _0x5639c2=_0x1bb5c4,_0x254654=this[_0x5639c2(0x177)]['find'](_0x57368e=>_0x57368e['id']===_0xe6dde0);if(_0x254654){if(_0x254654[_0x5639c2(0x142)]&&_0x254654[_0x5639c2(0x154)]<_0x254654[_0x5639c2(0x142)][_0x5639c2(0x193)]-0x1){_0x254654[_0x5639c2(0x154)]+=0x1;const _0x624d0d=_0x254654[_0x5639c2(0x142)][_0x254654['indiceUnidad']];_0x254654[_0x5639c2(0x18b)]=_0x624d0d[_0x5639c2(0x18b)],_0x254654[_0x5639c2(0x172)]=_0x624d0d[_0x5639c2(0x172)],this[_0x5639c2(0x167)](),this[_0x5639c2(0x11b)]();const _0x311a6e=this[_0x5639c2(0x189)]();return this[_0x5639c2(0x195)](_0x311a6e),!![];}else return![];}return![];}[_0x1bb5c4(0x17c)](_0x1e80ae){const _0x12f2ab=_0x1bb5c4,_0x57bf8a=this[_0x12f2ab(0x177)]['find'](_0x330bb0=>_0x330bb0['id']===_0x1e80ae);if(_0x57bf8a){if(_0x57bf8a[_0x12f2ab(0x142)]&&_0x57bf8a[_0x12f2ab(0x154)]>0x0){_0x57bf8a[_0x12f2ab(0x154)]-=0x1;const _0x329269=_0x57bf8a[_0x12f2ab(0x142)][_0x57bf8a[_0x12f2ab(0x154)]];_0x57bf8a[_0x12f2ab(0x18b)]=_0x329269[_0x12f2ab(0x18b)],_0x57bf8a[_0x12f2ab(0x172)]=_0x329269['unidad'],this[_0x12f2ab(0x167)](),this[_0x12f2ab(0x11b)]();const _0x1b895d=this[_0x12f2ab(0x189)]();return this[_0x12f2ab(0x195)](_0x1b895d),!![];}else return![];}return![];}[_0x1bb5c4(0x189)](){const _0x454dc4=_0x1bb5c4;return this[_0x454dc4(0x177)][_0x454dc4(0x197)]((_0x6048de,_0x3b02a3)=>_0x6048de+parseInt(_0x3b02a3[_0x454dc4(0x18b)])*_0x3b02a3[_0x454dc4(0x139)],0x0);}[_0x1bb5c4(0x140)](_0x3b6897){const _0x555bbc=_0x1bb5c4;if(_0x3b6897<this['pedidoMinimo'])return 0x0;if(_0x3b6897<this['envioGratisDesde'])return this[_0x555bbc(0x11e)];return 0x0;}['guardarEnLocalStorage'](){const _0x10af7a=_0x1bb5c4;localStorage[_0x10af7a(0x190)](_0x10af7a(0x15e),JSON[_0x10af7a(0xfe)](this[_0x10af7a(0x177)]));}async['cargarConfiguracion'](){const _0x5550ff=_0x1bb5c4,_0xd292c1=await obtenerConfiguracion();this[_0x5550ff(0x11e)]=_0xd292c1[_0x5550ff(0x11e)],this['pedidoMinimo']=_0xd292c1[_0x5550ff(0x18e)],this[_0x5550ff(0x147)]=_0xd292c1[_0x5550ff(0x147)],this[_0x5550ff(0x11b)]();}[_0x1bb5c4(0x11b)](){const _0x3c55aa=_0x1bb5c4,_0x5a7c3d=Array[_0x3c55aa(0x121)](document[_0x3c55aa(0x141)](_0x3c55aa(0x179)));this[_0x3c55aa(0x177)]=this[_0x3c55aa(0x177)]['map'](_0x3fc8b6=>{const _0x411411=_0x3c55aa,_0x366c0b=_0x5a7c3d[_0x411411(0x188)](_0x16127b=>_0x16127b['dataset']['id']===_0x3fc8b6['id']);if(_0x366c0b){const _0x50b22d=_0x366c0b[_0x411411(0x168)](_0x411411(0x183))['textContent'];return{..._0x3fc8b6,'titulo':_0x50b22d};}return _0x3fc8b6;}),this[_0x3c55aa(0x167)]();const _0x3ef7db=this[_0x3c55aa(0x177)][_0x3c55aa(0x197)]((_0x3adcaf,_0x39a684)=>_0x3adcaf+_0x39a684[_0x3c55aa(0x139)],0x0),_0x4029c1=this[_0x3c55aa(0x189)]();this[_0x3c55aa(0x123)][_0x3c55aa(0x19a)]=formatearNumero(_0x4029c1),this[_0x3c55aa(0x11a)]['textContent']=_0x3ef7db+_0x3c55aa(0x103)+(_0x3ef7db!==0x1?'s':'');const _0x10b837=document['getElementById']('barra-minimalista');_0x3ef7db>0x0?_0x10b837['style'][_0x3c55aa(0x136)]=_0x3c55aa(0x178):_0x10b837['style'][_0x3c55aa(0x136)]=_0x3c55aa(0x124);this[_0x3c55aa(0x153)]['innerHTML']='';if(this[_0x3c55aa(0x177)][_0x3c55aa(0x193)]===0x0){this[_0x3c55aa(0x153)][_0x3c55aa(0x132)]=_0x3c55aa(0x18a),this['subtotalCarrito'][_0x3c55aa(0x19a)]='$0',this[_0x3c55aa(0x118)][_0x3c55aa(0x19a)]='-',this['totalCarrito'][_0x3c55aa(0x19a)]='$0';return;}this[_0x3c55aa(0x177)][_0x3c55aa(0x10e)](_0x5acc04=>{const _0x5d51f4=_0x3c55aa,_0x22ec3a=document['createElement'](_0x5d51f4(0x163));_0x22ec3a[_0x5d51f4(0x191)]='item-carrito',_0x22ec3a[_0x5d51f4(0x16c)]['id']=_0x5acc04['id'];let _0x27d603='img/sin-imagen.png';const _0x58ec1a=document[_0x5d51f4(0x141)](_0x5d51f4(0x179));for(const _0x3a09d9 of _0x58ec1a){if(_0x3a09d9[_0x5d51f4(0x16c)]['id']===_0x5acc04['id']){const _0x2f1d11=_0x3a09d9[_0x5d51f4(0x168)]('.producto-thumbnail\x20img');if(_0x2f1d11){_0x27d603=_0x2f1d11[_0x5d51f4(0x176)]||_0x2f1d11[_0x5d51f4(0x171)](_0x5d51f4(0x117))||'img/sin-imagen.png';break;}}}_0x22ec3a['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22imagen-item-carrito\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22'+_0x27d603+_0x5d51f4(0x12a)+_0x5acc04[_0x5d51f4(0x14b)]+_0x5d51f4(0x199)+_0x5acc04[_0x5d51f4(0x14b)]+_0x5d51f4(0x13b)+(_0x5acc04[_0x5d51f4(0x142)]&&_0x5acc04[_0x5d51f4(0x154)]<=0x0?'disabled':'')+_0x5d51f4(0x185)+(_0x5acc04[_0x5d51f4(0x172)]||'')+_0x5d51f4(0x17b)+(_0x5acc04[_0x5d51f4(0x142)]&&_0x5acc04['indiceUnidad']>=_0x5acc04['unidades_precios'][_0x5d51f4(0x193)]-0x1?_0x5d51f4(0x122):'')+_0x5d51f4(0x12c)+formatearNumero(_0x5acc04[_0x5d51f4(0x18b)])+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',this['listaCarrito'][_0x5d51f4(0x108)](_0x22ec3a);}),this[_0x3c55aa(0x10b)]['textContent']=formatearNumero(_0x4029c1);let _0x4709cd=0x0;if(_0x4029c1<this['pedidoMinimo'])this[_0x3c55aa(0x118)][_0x3c55aa(0x19a)]='-',this['envioCarrito'][_0x3c55aa(0x17d)][_0x3c55aa(0x105)](_0x3c55aa(0x170)),_0x4709cd=0x0;else _0x4029c1<this[_0x3c55aa(0x147)]?(this[_0x3c55aa(0x118)]['textContent']=formatearNumero(this[_0x3c55aa(0x11e)]),this[_0x3c55aa(0x118)][_0x3c55aa(0x17d)][_0x3c55aa(0x105)](_0x3c55aa(0x170)),_0x4709cd=this[_0x3c55aa(0x11e)]):(this[_0x3c55aa(0x118)][_0x3c55aa(0x19a)]='Gratis',this[_0x3c55aa(0x118)][_0x3c55aa(0x17d)]['add'](_0x3c55aa(0x170)),_0x4709cd=0x0);const _0x22ba99=_0x4029c1+_0x4709cd;this[_0x3c55aa(0x187)][_0x3c55aa(0x19a)]=formatearNumero(_0x22ba99),this[_0x3c55aa(0x195)](_0x4029c1);}[_0x1bb5c4(0x195)](_0x1b3e9f){const _0x20314b=_0x1bb5c4,_0x1f8d9e=_0x1b3e9f>=this[_0x20314b(0x18e)];if(_0x1f8d9e){this[_0x20314b(0x16e)][_0x20314b(0x122)]=![],this[_0x20314b(0x16e)][_0x20314b(0x19a)]=_0x20314b(0x114),this[_0x20314b(0x16e)]['classList'][_0x20314b(0x105)](_0x20314b(0x129)),this[_0x20314b(0x16e)][_0x20314b(0x17d)][_0x20314b(0x11c)](_0x20314b(0x12e));const _0x5daa57=document[_0x20314b(0x149)](_0x20314b(0xff));_0x5daa57&&_0x5daa57[_0x20314b(0x105)]();}else{this[_0x20314b(0x16e)][_0x20314b(0x122)]=!![],this[_0x20314b(0x16e)][_0x20314b(0x19a)]=_0x20314b(0x13d)+formatearNumero(this[_0x20314b(0x18e)]),this[_0x20314b(0x16e)][_0x20314b(0x17d)][_0x20314b(0x105)](_0x20314b(0x12e)),this['botonEnviar'][_0x20314b(0x17d)][_0x20314b(0x11c)](_0x20314b(0x129));const _0x1f0b14=this[_0x20314b(0x18e)]-_0x1b3e9f;let _0x3bb39d=document[_0x20314b(0x149)](_0x20314b(0xff));!_0x3bb39d&&(_0x3bb39d=document[_0x20314b(0x158)]('div'),_0x3bb39d['id']='mensaje-pedido-minimo',_0x3bb39d[_0x20314b(0x191)]=_0x20314b(0xff),this[_0x20314b(0x16e)][_0x20314b(0x10c)][_0x20314b(0x106)](_0x3bb39d,this[_0x20314b(0x16e)]['nextSibling'])),_0x3bb39d[_0x20314b(0x19a)]='Agregá\x20productos\x20por\x20'+formatearNumero(_0x1f0b14)+_0x20314b(0x152);}}async[_0x1bb5c4(0x102)](){const _0x50af79=_0x1bb5c4;this['costoEnvio']=await obtenerConfiguracion(),this[_0x50af79(0x11b)]();}[_0x1bb5c4(0x16a)](){const _0x39954f=_0x1bb5c4;this['panelCarrito'][_0x39954f(0x17d)][_0x39954f(0x11c)](_0x39954f(0x12b)),this[_0x39954f(0x13c)][_0x39954f(0x17d)][_0x39954f(0x11c)](_0x39954f(0x162)),document[_0x39954f(0x17f)]['style']['overflow']='hidden';}[_0x1bb5c4(0x15f)](){const _0x21e000=_0x1bb5c4;this[_0x21e000(0x111)][_0x21e000(0x17d)]['remove']('abierto'),this[_0x21e000(0x13c)][_0x21e000(0x17d)][_0x21e000(0x105)](_0x21e000(0x162)),document[_0x21e000(0x17f)][_0x21e000(0x101)][_0x21e000(0x161)]='';}[_0x1bb5c4(0x12f)](_0x264ba3,_0x6f3fcf){const _0x2446b1=_0x1bb5c4,_0x52a92f=_0x6f3fcf['getBoundingClientRect'](),_0x45cfdb=window[_0x2446b1(0x109)]||window[_0x2446b1(0x14f)],_0x40c128=window[_0x2446b1(0x12d)]||window[_0x2446b1(0x175)],_0xd17afd=document[_0x2446b1(0x158)]('div');_0xd17afd[_0x2446b1(0x191)]='notificacion-agregado',_0xd17afd['textContent']='¡Agregado!',_0xd17afd[_0x2446b1(0x101)]['position']=_0x2446b1(0x165);const _0x41f548=_0x52a92f[_0x2446b1(0x13e)]+_0x40c128-0xa,_0x1074cd=_0x52a92f[_0x2446b1(0x15a)]+_0x45cfdb+_0x52a92f['height']/0x2-0xf;_0xd17afd['style'][_0x2446b1(0x13e)]=_0x41f548+'px',_0xd17afd['style'][_0x2446b1(0x15a)]=_0x1074cd+'px',_0xd17afd[_0x2446b1(0x101)][_0x2446b1(0x133)]='0',_0xd17afd[_0x2446b1(0x101)][_0x2446b1(0x17e)]='500',_0xd17afd[_0x2446b1(0x101)][_0x2446b1(0x138)]=_0x2446b1(0x17a),document['body'][_0x2446b1(0x108)](_0xd17afd);const _0x98399f=_0xd17afd['getBoundingClientRect']();_0x98399f[_0x2446b1(0x13e)]<0xa&&(_0xd17afd['style'][_0x2446b1(0x13e)]=_0x2446b1(0x10f),_0xd17afd[_0x2446b1(0x101)][_0x2446b1(0x138)]=_0x2446b1(0x124)),_0x98399f['top']<0xa&&(_0xd17afd['style'][_0x2446b1(0x15a)]=_0x45cfdb+0xa+'px'),_0x98399f[_0x2446b1(0x16b)]>window[_0x2446b1(0x144)]-0xa&&(_0xd17afd[_0x2446b1(0x101)][_0x2446b1(0x15a)]=window['innerHeight']-_0x98399f[_0x2446b1(0x155)]-0xa+_0x45cfdb+'px'),setTimeout(()=>{const _0x5c0801=_0x2446b1;_0xd17afd[_0x5c0801(0x101)][_0x5c0801(0x133)]='1',_0xd17afd['style'][_0x5c0801(0x174)]='opacity\x200.3s\x20ease';},0xa),setTimeout(()=>{const _0x5491ce=_0x2446b1;_0xd17afd[_0x5491ce(0x101)][_0x5491ce(0x133)]='0',setTimeout(()=>{const _0x486e83=_0x5491ce;_0xd17afd[_0x486e83(0x10c)]&&_0xd17afd[_0x486e83(0x10c)]['removeChild'](_0xd17afd);},0x12c);},0x3e8);}[_0x1bb5c4(0x135)](){const _0xa6ad32=_0x1bb5c4;if(this['items'][_0xa6ad32(0x193)]===0x0)return;const _0x233c31=this[_0xa6ad32(0x189)]();if(_0x233c31<this[_0xa6ad32(0x18e)])return;const _0x459bca='5491131919307';let _0x5739ec='';this[_0xa6ad32(0x177)][_0xa6ad32(0x10e)](_0x1530ec=>{const _0x3fe6d8=_0xa6ad32;_0x5739ec+='•\x20'+_0x1530ec['unidad']+'\x20de\x20'+(_0x1530ec[_0x3fe6d8(0x14b)]['charAt'](0x0)[_0x3fe6d8(0x151)]()+_0x1530ec[_0x3fe6d8(0x14b)][_0x3fe6d8(0x15b)](0x1))+_0x3fe6d8(0x164);}),_0x5739ec+=_0xa6ad32(0x113)+formatearNumero(_0x233c31)+'%0A';let _0x4a7ae0=0x0,_0x4de871='';if(_0x233c31<this['pedidoMinimo'])_0x4de871='-',_0x4a7ae0=0x0;else _0x233c31<this[_0xa6ad32(0x147)]?(_0x4de871=formatearNumero(this['costoEnvio']),_0x4a7ae0=this[_0xa6ad32(0x11e)]):(_0x4de871='Gratis',_0x4a7ae0=0x0);_0x5739ec+='Envío:\x20'+_0x4de871+_0xa6ad32(0x164),_0x5739ec+=_0xa6ad32(0xfd)+formatearNumero(_0x233c31+_0x4a7ae0);const _0x460753=_0xa6ad32(0x110)+_0x459bca+_0xa6ad32(0x194)+_0x5739ec;window['open'](_0x460753,_0xa6ad32(0x126));}}document[_0x1bb5c4(0x127)](_0x1bb5c4(0x14c),()=>{const _0x309a03=_0x1bb5c4;window[_0x309a03(0x15e)]=new Carrito();});function agregarAlCarrito(_0x53dd83,_0x409e13=null){const _0x29b093=_0x1bb5c4;window[_0x29b093(0x15e)]&&window[_0x29b093(0x15e)][_0x29b093(0x16d)](_0x53dd83,_0x409e13);}
+// ===== GESTIÓN DEL CARRITO =====
+
+// Función helper para buscar elementos por texto (similar a :contains de jQuery)
+function encontrarElementoPorTexto(selector, texto) {
+    const elementos = document.querySelectorAll(selector);
+    return Array.from(elementos).find(el => 
+        el.textContent.trim().toLowerCase() === texto.toLowerCase()
+    );
+}
+
+// Extender NodeList para incluir método find (para compatibilidad)
+if (!NodeList.prototype.find) {
+    NodeList.prototype.find = function(callback) {
+        return Array.from(this).find(callback);
+    };
+}
+
+async function obtenerConfiguracion() {
+    try {
+        const costoEnvioDefault = 5000;
+        const pedidoMinimoDefault = 25000;
+        const envioGratisDesdeDefault = 60000;
+
+        const urlJSON = 'https://dietetica.github.io/data/config.json';
+        const respuesta = await fetch(urlJSON);
+        const datos = await respuesta.json();
+
+        console.info(`Configuración 👇\nCosto de envío: $${datos.costoEnvio}\nPedido mínimo: $${datos.pedidoMinimo}\nEnvío gratis desde: $${datos.envioGratisDesde}`);
+        
+        return {
+            costoEnvio: parseInt(datos.costoEnvio) || costoEnvioDefault,
+            pedidoMinimo: parseInt(datos.pedidoMinimo) || pedidoMinimoDefault,
+            envioGratisDesde: parseInt(datos.envioGratisDesde) || envioGratisDesdeDefault
+        };
+    } catch (error) {
+        console.error('Error al cargar la configuración:', error);
+        return { costoEnvio: costoEnvioDefault, pedidoMinimo: pedidoMinimoDefault, envioGratisDesde: envioGratisDesdeDefault };
+    }
+}
+
+class Carrito {
+    constructor() {
+        this.items = JSON.parse(localStorage.getItem('carrito')) || [];
+        this.costoEnvio = 0;
+        this.pedidoMinimo = 0;
+        this.inicializarElementos();
+        this.inicializarEventos();
+        this.actualizarUI();
+        this.cargarConfiguracion();
+    }
+
+    inicializarElementos() {
+        this.panelCarrito = document.getElementById('panel-carrito');
+        this.overlayCarrito = document.getElementById('overlay-carrito');
+        this.listaCarrito = document.getElementById('lista-carrito');
+        this.subtotalCarrito = document.getElementById('subtotal-carrito');
+        this.envioCarrito = document.getElementById('envio-carrito');
+        this.totalCarrito = document.getElementById('total-carrito');
+        this.botonEnviar = document.getElementById('boton-enviar-pedido');
+        this.botonCerrarCarrito = document.getElementById('cerrar-carrito');
+        
+        // Barra minimalista
+        this.barraMinimalista = document.getElementById('barra-minimalista');
+        this.botonCarritoMinimalista = document.getElementById('boton-carrito-minimalista');
+        this.totalPedido = document.getElementById('total-pedido');
+        this.detallesPedido = document.getElementById('detalles-pedido');
+    }
+
+    inicializarEventos() {
+        this.overlayCarrito.addEventListener('click', () => this.cerrarCarrito());
+        this.botonCerrarCarrito.addEventListener('click', () => this.cerrarCarrito());
+        this.botonEnviar.addEventListener('click', () => this.enviarPedidoWhatsApp());
+        
+        // Evento para el botón de la barra minimalista
+        this.botonCarritoMinimalista.addEventListener('click', () => this.abrirCarrito());
+        
+        this.listaCarrito.addEventListener('click', (e) => {
+            // Detectar clics en los contenedores de botones
+            const contenedorBoton = e.target.closest('.contenedor-boton');
+            if (!contenedorBoton) return;
+            
+            const boton = contenedorBoton.querySelector('button');
+            if (!boton || boton.disabled) return; // No hacer nada si el botón está deshabilitado
+            
+            const id = e.target.closest('.item-carrito').dataset.id;
+            
+            if (boton.classList.contains('disminuir')) {
+                this.disminuirCantidad(id);
+            } else if (boton.classList.contains('aumentar')) {
+                this.aumentarCantidad(id);
+            } else if (boton.classList.contains('eliminar')) {
+                this.eliminarProducto(id);
+            }
+        });
+    }
+
+    actualizarBotonesAgregar() {
+        const botones = document.querySelectorAll('.boton-agregar');
+        botones.forEach(boton => {
+            const productoId = boton.dataset.id;
+            const enCarrito = this.items.find(item => item.id === productoId);
+            
+            if (enCarrito) {
+                boton.classList.add('en-carrito');
+            } else {
+                boton.classList.remove('en-carrito');
+            }
+        });
+    }
+
+    agregarProducto(producto, botonAgregar = null) {
+        const productoExistente = this.items.find(item => item.id === producto.id);
+        
+        if (productoExistente) {
+            //productoExistente.cantidad += 1;
+        } else {
+            this.items.push({
+                id: producto.id,
+                titulo: producto.titulo,
+                precio: producto.precio,
+                unidad: producto.unidad,
+                unidades_precios: producto.unidades_precios || [],
+                indiceUnidad: producto.indiceUnidad || 0,
+                cantidad: 1
+            });
+            
+            // Mostrar confirmación de agregregado si se proporcionó un botón
+            if (botonAgregar) {
+                this.mostrarConfirmacionAgregado(producto.titulo, botonAgregar);
+            }
+        }
+        
+        this.guardarEnLocalStorage();
+        this.actualizarUI();
+
+        // Actualizar el estado de los botones
+        this.actualizarBotonesAgregar();
+    }
+
+eliminarProducto(id) {
+    this.items = this.items.filter(item => item.id !== id);
+    this.guardarEnLocalStorage();
+    this.actualizarUI();
+    
+    // Actualizar específicamente el mensaje de pedido mínimo
+    const subtotal = this.calcularSubtotal();
+    this.actualizarBotonEnvio(subtotal);
+    
+    this.actualizarBotonesAgregar();
+}
+
+    aumentarCantidad(id) {
+        const producto = this.items.find(item => item.id === id);
+        if (producto) {
+            // Verificar si hay más opciones de unidades disponibles
+            if (producto.unidades_precios && producto.indiceUnidad < producto.unidades_precios.length - 1) {
+                // Cambiar a la siguiente unidad
+                producto.indiceUnidad += 1;
+                const nuevaUnidad = producto.unidades_precios[producto.indiceUnidad];
+                producto.precio = nuevaUnidad.precio;
+                producto.unidad = nuevaUnidad.unidad;
+                
+                this.guardarEnLocalStorage();
+                this.actualizarUI();
+                
+                // Actualizar específicamente el mensaje de pedido mínimo
+                const subtotal = this.calcularSubtotal();
+                this.actualizarBotonEnvio(subtotal);
+                
+                return true; // Operación exitosa
+            } else {
+                // No hay más unidades disponibles
+                return false;
+            }
+        }
+        return false;
+    }
+
+    disminuirCantidad(id) {
+        const producto = this.items.find(item => item.id === id);
+        if (producto) {
+            // Verificar si hay unidades anteriores disponibles
+            if (producto.unidades_precios && producto.indiceUnidad > 0) {
+                // Cambiar a la unidad anterior
+                producto.indiceUnidad -= 1;
+                const nuevaUnidad = producto.unidades_precios[producto.indiceUnidad];
+                producto.precio = nuevaUnidad.precio;
+                producto.unidad = nuevaUnidad.unidad;
+                
+                this.guardarEnLocalStorage();
+                this.actualizarUI();
+                
+                // Actualizar específicamente el mensaje de pedido mínimo
+                const subtotal = this.calcularSubtotal();
+                this.actualizarBotonEnvio(subtotal);
+                
+                return true; // Operación exitosa
+            } else {
+                // No hay unidades anteriores disponibles
+                return false;
+            }
+        }
+        return false;
+    }
+
+    calcularSubtotal() {
+        return this.items.reduce((total, item) => total + (parseInt(item.precio) * item.cantidad), 0);
+    }
+
+    calcularEnvio(subtotal) {
+        if (subtotal < this.pedidoMinimo) {
+            return 0;
+        }
+        
+        if (subtotal < this.envioGratisDesde) {
+            return this.costoEnvio;
+        }
+        
+        return 0;
+    }
+
+    guardarEnLocalStorage() {
+        localStorage.setItem('carrito', JSON.stringify(this.items));
+    }
+
+    async cargarConfiguracion() {
+        const config = await obtenerConfiguracion();
+        this.costoEnvio = config.costoEnvio;
+        this.pedidoMinimo = config.pedidoMinimo;
+        this.envioGratisDesde = config.envioGratisDesde;
+        this.actualizarUI();
+    }
+
+    actualizarUI() {
+        // Obtener productos actuales del DOM
+        const productosDOM = Array.from(document.querySelectorAll('.producto-item'));
+        
+        // Actualizar información de productos en el carrito con datos actuales
+        this.items = this.items.map(itemCarrito => {
+            const productoActual = productosDOM.find(producto => 
+                producto.dataset.id === itemCarrito.id
+            );
+            
+            if (productoActual) {
+                // Obtener datos actualizados del DOM
+                const titulo = productoActual.querySelector('.producto-titulo').textContent;
+                
+                // Mantener las unidades_precios e indiceUnidad existentes
+                return {
+                    ...itemCarrito,
+                    titulo: titulo
+                };
+            }
+            
+            return itemCarrito; // Mantener datos originales si no se encuentra el producto
+        });
+        
+        this.guardarEnLocalStorage();
+
+        // Actualizar contadores
+        const totalItems = this.items.reduce((sum, item) => sum + item.cantidad, 0);
+        const subtotal = this.calcularSubtotal();
+        
+        // Actualizar información de la barra minimalista
+        this.totalPedido.textContent = formatearNumero(subtotal);
+        this.detallesPedido.textContent = `${totalItems} producto${totalItems !== 1 ? 's' : ''}`;
+        
+        // Mostrar/ocultar barra minimalista según si hay productos
+        const barraMinimalista = document.getElementById('barra-minimalista');
+        if (totalItems > 0) {
+            barraMinimalista.style.display = 'flex';
+        } else {
+            barraMinimalista.style.display = 'none';
+        }
+        
+        // Resto de la actualización de UI (lista de carrito, etc.)
+        this.listaCarrito.innerHTML = '';
+        
+        if (this.items.length === 0) {
+            this.listaCarrito.innerHTML = `
+<div style="position: relative; height: 100%; padding: 0px;">
+        <p style="text-align: center; color: #777; padding: 20px 0px 100px 0px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;">
+            Tu pedido está vacío
+        </p>
+        <img class="gatitos-animados" 
+            src="img/gatitos.png" alt="Gatitos">
+    </div>
+            `;
+            this.subtotalCarrito.textContent = '$0';
+            this.envioCarrito.textContent = '-';
+            this.totalCarrito.textContent = '$0';
+            return;
+        }
+        
+        this.items.forEach(item => {
+            const elemento = document.createElement('div');
+            elemento.className = 'item-carrito';
+            elemento.dataset.id = item.id;
+            
+            // Buscar la imagen del producto
+            let imagenSrc = 'img/sin-imagen.png';
+            const productos = document.querySelectorAll('.producto-item');
+
+            for (const producto of productos) {
+                if (producto.dataset.id === item.id) {
+                    const img = producto.querySelector('.producto-thumbnail img');
+                    if (img) {
+                        // Obtener la imagen real (src o data-src para lazy loading)
+                        imagenSrc = img.src || img.getAttribute('data-src') || 'img/sin-imagen.png';
+                        break;
+                    }
+                }
+            }
+            
+            elemento.innerHTML = `
+                <div class="imagen-item-carrito">
+                    <img src="${imagenSrc}" alt="${item.titulo}" onerror="this.src='img/sin-imagen.png'">
+                </div>
+                <div class="contenido-item-carrito">
+                    <div class="titulo-item-carrito">
+                        <p>${item.titulo}</p>
+                    </div>
+                    <div class="controles-precio-item-carrito">
+                        <div class="contenedor-boton contenedor-eliminar">
+                            <button class="eliminar">🗑️</button>
+                        </div>
+                        <div class="contenedor-boton contenedor-disminuir">
+                            <button class="disminuir" ${item.unidades_precios && item.indiceUnidad <= 0 ? 'disabled' : ''}>-</button>
+                        </div>
+                        <div class="controles-unidad-item-carrito"> 
+                            <span class="unidad-item-carrito">${item.unidad || ''}</span>
+                        </div>
+                        <div class="contenedor-boton contenedor-aumentar">
+                            <button class="aumentar" ${item.unidades_precios && item.indiceUnidad >= item.unidades_precios.length - 1 ? 'disabled' : ''}>+</button>
+                        </div>
+                    </div>
+                    <div class="precio-item-carrito">
+                        ${formatearNumero(item.precio)}
+                    </div>
+                </div>
+            `;
+            
+            this.listaCarrito.appendChild(elemento);
+        });
+        
+        // Actualizar totales
+        this.subtotalCarrito.textContent = formatearNumero(subtotal);
+        
+        // Calcular envío
+        let costoEnvio = 0;
+        
+        if (subtotal < this.pedidoMinimo) {
+            this.envioCarrito.textContent = "-";
+            this.envioCarrito.classList.remove('envio-gratis'); // Remover clase si existe
+            costoEnvio = 0;
+        } else if (subtotal < this.envioGratisDesde) {
+            this.envioCarrito.textContent = formatearNumero(this.costoEnvio);
+            this.envioCarrito.classList.remove('envio-gratis'); // Remover clase si existe
+            costoEnvio = this.costoEnvio;
+        } else {
+            this.envioCarrito.textContent = "Gratis";
+            this.envioCarrito.classList.add('envio-gratis'); // Agregar clase para envío gratis
+            costoEnvio = 0;
+        }
+        
+        const total = subtotal + costoEnvio;
+        this.totalCarrito.textContent = formatearNumero(total);
+        
+        // Actualizar botón de envío
+        this.actualizarBotonEnvio(subtotal);
+    }
+
+    actualizarBotonEnvio(subtotal) {
+        const cumpleMinimo = subtotal >= this.pedidoMinimo;
+        
+        if (cumpleMinimo) {
+            this.botonEnviar.disabled = false;
+            this.botonEnviar.textContent = 'Enviar pedido por WhatsApp';
+            this.botonEnviar.classList.remove('boton-deshabilitado');
+            this.botonEnviar.classList.add('boton-habilitado');
+            
+            // Eliminar mensaje de pedido mínimo si existe
+            const mensajeMinimo = document.getElementById('mensaje-pedido-minimo');
+            if (mensajeMinimo) {
+                mensajeMinimo.remove();
+            }
+        } else {
+            this.botonEnviar.disabled = true;
+            this.botonEnviar.textContent = `Pedido mínimo: ${formatearNumero(this.pedidoMinimo)}`;
+            this.botonEnviar.classList.remove('boton-habilitado');
+            this.botonEnviar.classList.add('boton-deshabilitado');
+            
+            // Calcular monto faltante
+            const montoFaltante = this.pedidoMinimo - subtotal;
+            
+            // Agregar o actualizar mensaje informativo
+            let mensaje = document.getElementById('mensaje-pedido-minimo');
+            
+            if (!mensaje) {
+                mensaje = document.createElement('div');
+                mensaje.id = 'mensaje-pedido-minimo';
+                mensaje.className = 'mensaje-pedido-minimo';
+                
+                // Insertar después del botón de envío
+                this.botonEnviar.parentNode.insertBefore(mensaje, this.botonEnviar.nextSibling);
+            }
+            
+            mensaje.textContent = `Agregá productos por ${formatearNumero(montoFaltante)} para completar el pedido mínimo`;
+        }
+    }
+
+    async cargarCostoEnvio() {
+        this.costoEnvio = await obtenerConfiguracion();
+        this.actualizarUI();
+    }    
+
+    abrirCarrito() {
+        this.panelCarrito.classList.add('abierto');
+        this.overlayCarrito.classList.add('activo');
+        document.body.style.overflow = 'hidden';
+    }
+
+    cerrarCarrito() {
+        this.panelCarrito.classList.remove('abierto');
+        this.overlayCarrito.classList.remove('activo');
+        document.body.style.overflow = '';
+    }
+
+    mostrarConfirmacionAgregado(nombreProducto, botonAgregar) {
+        const botonRect = botonAgregar.getBoundingClientRect();
+        const scrollY = window.scrollY || window.pageYOffset;
+        const scrollX = window.scrollX || window.pageXOffset;
+        
+        const notificacion = document.createElement('div');
+        notificacion.className = 'notificacion-agregado';
+        notificacion.textContent = '¡Agregado!';
+        notificacion.style.position = 'absolute';
+        
+        // Calcular posición centrada verticalmente respecto al botón
+        const leftPosition = botonRect.left + scrollX - 10;
+        const topPosition = botonRect.top + scrollY + (botonRect.height / 2) - (15); // 15px es la mitad de la altura estimada de la notificación
+        
+        notificacion.style.left = `${leftPosition}px`;
+        notificacion.style.top = `${topPosition}px`;
+        notificacion.style.opacity = '0';
+        notificacion.style.zIndex = '500';
+        notificacion.style.transform = 'translateX(-95%)';
+        
+        document.body.appendChild(notificacion);
+        
+        // Asegurar que la notificación no se salga de la pantalla
+        const notifRect = notificacion.getBoundingClientRect();
+        
+        // Ajustar si se sale por la izquierda
+        if (notifRect.left < 10) {
+            notificacion.style.left = '10px';
+            notificacion.style.transform = 'none';
+        }
+        
+        // Ajustar si se sale por arriba
+        if (notifRect.top < 10) {
+            notificacion.style.top = `${scrollY + 10}px`;
+        }
+        
+        // Ajustar si se sale por abajo
+        if (notifRect.bottom > window.innerHeight - 10) {
+            notificacion.style.top = `${window.innerHeight - notifRect.height - 10 + scrollY}px`;
+        }
+        
+        // Animación de entrada
+        setTimeout(() => {
+            notificacion.style.opacity = '1';
+            notificacion.style.transition = 'opacity 0.3s ease';
+        }, 10);
+        
+        // Animación de salida después de 1.5 segundos
+        setTimeout(() => {
+            notificacion.style.opacity = '0';
+            
+            setTimeout(() => {
+                if (notificacion.parentNode) {
+                    notificacion.parentNode.removeChild(notificacion);
+                }
+            }, 300);
+        }, 1000);
+    }
+
+    enviarPedidoWhatsApp() {
+        if (this.items.length === 0) return;
+
+        const subtotal = this.calcularSubtotal();
+
+        // Verificar que cumpla con el pedido mínimo
+        if (subtotal < this.pedidoMinimo) {
+            return; // No hacer nada si no cumple el mínimo
+        }
+        
+        const numeroWhatsApp = '5491131919307';
+        let mensaje = '';
+        
+        this.items.forEach(item => {
+            mensaje += `• ${item.unidad} de ${item.titulo.charAt(0).toLowerCase() + item.titulo.slice(1)}%0A`;
+        });
+        
+        mensaje += `%0ASubtotal: ${formatearNumero(subtotal)}%0A`;
+        
+        // Calcular el costo de envío para WhatsApp (igual que en la UI)
+        let costoEnvioWhatsApp = 0;
+        let textoEnvio = '';
+        
+        if (subtotal < this.pedidoMinimo) {
+            textoEnvio = "-";
+            costoEnvioWhatsApp = 0;
+        } else if (subtotal < this.envioGratisDesde) {
+            textoEnvio = formatearNumero(this.costoEnvio);
+            costoEnvioWhatsApp = this.costoEnvio;
+        } else {
+            textoEnvio = "Gratis";
+            costoEnvioWhatsApp = 0;
+        }
+        
+        mensaje += `Envío: ${textoEnvio}%0A`;
+        mensaje += `Total: ${formatearNumero(subtotal + costoEnvioWhatsApp)}`;
+        
+        const urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensaje}`;
+        window.open(urlWhatsApp, '_blank');
+    }
+}
+
+// Inicializar carrito cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    window.carrito = new Carrito();
+});
+
+// Función para agregar productos al carrito desde cualquier parte del código
+function agregarAlCarrito(producto, botonAgregar = null) {
+    if (window.carrito) {
+        window.carrito.agregarProducto(producto, botonAgregar);
+    }
+}
