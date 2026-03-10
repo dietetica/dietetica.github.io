@@ -1,1 +1,709 @@
-const _0x1d218f=_0x54e4;(function(_0x2751bd,_0x149469){const _0x1a3a6a=_0x54e4,_0x394101=_0x2751bd();while(!![]){try{const _0x283df4=-parseInt(_0x1a3a6a(0x201))/0x1*(-parseInt(_0x1a3a6a(0x184))/0x2)+-parseInt(_0x1a3a6a(0x250))/0x3+parseInt(_0x1a3a6a(0x22d))/0x4+parseInt(_0x1a3a6a(0x183))/0x5+parseInt(_0x1a3a6a(0x1f2))/0x6*(parseInt(_0x1a3a6a(0x1e3))/0x7)+parseInt(_0x1a3a6a(0x190))/0x8+-parseInt(_0x1a3a6a(0x1b1))/0x9;if(_0x283df4===_0x149469)break;else _0x394101['push'](_0x394101['shift']());}catch(_0x2b5692){_0x394101['push'](_0x394101['shift']());}}}(_0x42a4,0xd0bb9),document[_0x1d218f(0x1c1)](_0x1d218f(0x238),()=>{const _0x36b0c8=_0x1d218f;cargarYMostrarProductos()[_0x36b0c8(0x17c)](()=>{const _0x1d7f3c=_0x36b0c8;inicializarAutocomplete(),window[_0x1d7f3c(0x1c9)]&&setTimeout(()=>{const _0x463360=_0x1d7f3c;window[_0x463360(0x1c9)][_0x463360(0x212)]();},0x12c);}),cargarEtiquetasDesdeCSV(),inicializarSistemaDeFiltrado();}),document[_0x1d218f(0x1c1)](_0x1d218f(0x180),function(_0x5408b6){const _0x69b7a6=_0x1d218f;_0x5408b6[_0x69b7a6(0x24c)]();},![]));function _0x54e4(_0xa6f64e,_0x60ff19){const _0x42a4de=_0x42a4();return _0x54e4=function(_0x54e417,_0xc473a3){_0x54e417=_0x54e417-0x174;let _0x1f76ab=_0x42a4de[_0x54e417];return _0x1f76ab;},_0x54e4(_0xa6f64e,_0x60ff19);}function normalizar(_0x1cabf0){const _0x442627=_0x1d218f;return _0x1cabf0[_0x442627(0x1d5)]()[_0x442627(0x22e)](_0x442627(0x1e0))[_0x442627(0x210)](/[\u0300-\u036f]/g,'')[_0x442627(0x210)](/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2580-\u27BF]|\uD83E[\uDD10-\uDDFF]|🫘/g,'')['toLowerCase']();}function formatearNumero(_0x4bd7a1){const _0x31031b=_0x1d218f,_0x4c384d=parseInt(_0x4bd7a1,0xa);return'$'+_0x4c384d['toLocaleString'](_0x31031b(0x209));}function resetInputValue(_0x483bd3){_0x483bd3['value']='';}function deselectAllTags(){const _0x2290c4=_0x1d218f;document[_0x2290c4(0x23e)]('.tags-container\x20.tag:not(.toggle-tag)')[_0x2290c4(0x218)](_0xa24ada=>{const _0xa976e1=_0x2290c4;_0xa24ada[_0xa976e1(0x27b)][_0xa976e1(0x1fa)](_0xa976e1(0x1ee));});}async function cargarYMostrarProductos(){const _0xbd879a=_0x1d218f;try{const _0x57c637=_0xbd879a(0x1db),_0x2d404d=await fetch(_0x57c637),_0x1b37cb=await _0x2d404d['text'](),_0xc77db7=parsearCSV(_0x1b37cb);mostrarProductos(_0xc77db7),activarLazyLoad();}catch(_0x46c08b){console[_0xbd879a(0x20b)](_0xbd879a(0x21b),_0x46c08b);}}function inicializarAutocomplete(){const _0x113d58=_0x1d218f,_0x1580e0=document[_0x113d58(0x200)](_0x113d58(0x1ef)),_0x25237f=document[_0x113d58(0x1b6)](_0x113d58(0x1ba));_0x25237f[_0x113d58(0x271)]=_0x113d58(0x1d7),_0x25237f[_0x113d58(0x27f)][_0x113d58(0x18f)]='none',_0x1580e0['parentNode'][_0x113d58(0x1d6)][_0x113d58(0x208)](_0x25237f),_0x1580e0[_0x113d58(0x1c1)](_0x113d58(0x1d4),function(){const _0x46f547=_0x113d58,_0x911688=this[_0x46f547(0x228)][_0x46f547(0x1d5)]()[_0x46f547(0x174)]();_0x25237f['innerHTML']='',_0x25237f[_0x46f547(0x27f)][_0x46f547(0x18f)]=_0x46f547(0x22c);if(_0x911688[_0x46f547(0x25b)]<0x3)return;const _0x308e3a=[_0x46f547(0x25f),_0x46f547(0x1c2),_0x46f547(0x203),'Aceite\x20de\x20nuéz\x20pecán',_0x46f547(0x276),'Ají\x20molido',_0x46f547(0x26c),'Ajo\x20en\x20polvo',_0x46f547(0x243),_0x46f547(0x1e1),'Anis\x20estrellado',_0x46f547(0x281),_0x46f547(0x269),_0x46f547(0x26d),_0x46f547(0x222),_0x46f547(0x18b),_0x46f547(0x1d8),_0x46f547(0x1df),_0x46f547(0x1eb),_0x46f547(0x181),_0x46f547(0x1b3),_0x46f547(0x1f3),_0x46f547(0x1af),'Bolsita\x20para\x20hacer\x20leches\x20vegetales',_0x46f547(0x1a7),_0x46f547(0x275),_0x46f547(0x1c5),_0x46f547(0x24b),_0x46f547(0x194),'Galletitas','Carqueja',_0x46f547(0x1e7),_0x46f547(0x23a),'Chimichurri','Chocolate\x2060%',_0x46f547(0x202),_0x46f547(0x1e2),'Chocolate\x20sin\x20azúcar\x20agregada',_0x46f547(0x26a),_0x46f547(0x1c3),_0x46f547(0x254),_0x46f547(0x21e),_0x46f547(0x1b5),_0x46f547(0x240),_0x46f547(0x207),_0x46f547(0x1ad),_0x46f547(0x233),_0x46f547(0x263),_0x46f547(0x182),_0x46f547(0x1a2),'Fideos\x20codito\x20con\x20harina\x20de\x20garbanzos','Galletas\x20de\x20arroz',_0x46f547(0x26f),_0x46f547(0x1f7),_0x46f547(0x21a),_0x46f547(0x24d),_0x46f547(0x1f0),_0x46f547(0x1ec),_0x46f547(0x1a9),_0x46f547(0x25d),_0x46f547(0x23d),_0x46f547(0x230),'Harina\x20de\x20lino',_0x46f547(0x1c8),'Harina\x20de\x20arroz\x20sin\x20TACC','Harina\x20de\x20algarroba',_0x46f547(0x1d0),_0x46f547(0x211),'Hibiscus',_0x46f547(0x226),_0x46f547(0x1e5),_0x46f547(0x1ae),_0x46f547(0x273),_0x46f547(0x1c0),_0x46f547(0x1cc),_0x46f547(0x253),_0x46f547(0x189),_0x46f547(0x177),_0x46f547(0x21f),'Laurel\x20hojas','Lavanda\x20flores','Leche\x20de\x20nuez\x20pecan\x20sin\x20azúcar',_0x46f547(0x247),_0x46f547(0x213),_0x46f547(0x214),_0x46f547(0x25a),_0x46f547(0x185),_0x46f547(0x234),_0x46f547(0x241),'Fécula\x20de\x20maíz',_0x46f547(0x1c6),_0x46f547(0x19f),_0x46f547(0x1a5),_0x46f547(0x256),_0x46f547(0x186),_0x46f547(0x1b8),_0x46f547(0x277),'Marcela','Menta',_0x46f547(0x261),_0x46f547(0x20c),_0x46f547(0x239),'Miel\x20con\x20jengibre',_0x46f547(0x1d2),_0x46f547(0x257),_0x46f547(0x178),'Nuez\x20moscada',_0x46f547(0x1a0),'Nuez\x20pecán','Orégano',_0x46f547(0x17e),_0x46f547(0x17d),_0x46f547(0x1ff),_0x46f547(0x232),'Tahini',_0x46f547(0x231),'Peras\x20deshidratadas',_0x46f547(0x19b),_0x46f547(0x195),'Pimienta\x20negra\x20molida',_0x46f547(0x176),_0x46f547(0x219),'Polvo\x20de\x20hornear','Porotos\x20Mung',_0x46f547(0x249),_0x46f547(0x237),_0x46f547(0x1e6),_0x46f547(0x262),'Provenzal',_0x46f547(0x1a6),'Romero',_0x46f547(0x227),_0x46f547(0x246),'Sal\x20marina\x20gruesa',_0x46f547(0x27d),_0x46f547(0x1fd),_0x46f547(0x22f),_0x46f547(0x17b),_0x46f547(0x245),_0x46f547(0x1c4),_0x46f547(0x1d9),_0x46f547(0x193),_0x46f547(0x175),_0x46f547(0x1a4),_0x46f547(0x1ac),_0x46f547(0x1ed),'Pasta\x20de\x20dientes\x20Sudanta',_0x46f547(0x23c),_0x46f547(0x21d),_0x46f547(0x258),_0x46f547(0x1e4),'Tofu',_0x46f547(0x242),_0x46f547(0x236),_0x46f547(0x223),_0x46f547(0x22b),_0x46f547(0x259)],_0x46080b=_0x308e3a[_0x46f547(0x26e)](_0x507e46=>normalizar(_0x507e46)[_0x46f547(0x23b)](normalizar(_0x911688)))['slice'](0x0,0x5);_0x46080b[_0x46f547(0x25b)]>0x0&&(_0x25237f['style'][_0x46f547(0x18f)]=_0x46f547(0x19d),_0x46080b[_0x46f547(0x218)](_0x4d783b=>{const _0x5d3a71=_0x46f547,_0x2fb2aa=document[_0x5d3a71(0x1b6)](_0x5d3a71(0x1ba));_0x2fb2aa[_0x5d3a71(0x271)]=_0x5d3a71(0x1a8),_0x2fb2aa[_0x5d3a71(0x1bc)]=_0x4d783b,_0x2fb2aa[_0x5d3a71(0x1c1)](_0x5d3a71(0x18d),()=>{const _0x48a9e1=_0x5d3a71;_0x1580e0[_0x48a9e1(0x228)]=_0x4d783b,filtrarProductos(),_0x25237f[_0x48a9e1(0x27f)][_0x48a9e1(0x18f)]='none';}),_0x25237f[_0x5d3a71(0x208)](_0x2fb2aa);}));}),document['addEventListener'](_0x113d58(0x18d),_0x105075=>{const _0x505025=_0x113d58;!_0x25237f['contains'](_0x105075[_0x505025(0x20d)])&&_0x105075[_0x505025(0x20d)]!==_0x1580e0&&(_0x25237f['style'][_0x505025(0x18f)]='none');}),_0x1580e0[_0x113d58(0x1c1)](_0x113d58(0x1b0),()=>{setTimeout(()=>{const _0x8a93da=_0x54e4;_0x25237f['style'][_0x8a93da(0x18f)]=_0x8a93da(0x22c);},0xc8);});}function parsearCSV(_0x1c876b){const _0x1c239e=_0x1d218f,_0x2ca8ef=',',_0x29efef=_0x1c876b[_0x1c239e(0x1ea)]('\x0a')['filter'](_0x13b9e5=>_0x13b9e5[_0x1c239e(0x1d5)]()!==''),_0x18676a=_0x29efef[0x0][_0x1c239e(0x1ea)](_0x2ca8ef);return _0x29efef['slice'](0x1)['map'](_0x538ce1=>{const _0x1d68d7=_0x1c239e,_0x4e486d=_0x538ce1['split'](_0x2ca8ef),_0x267679={};return _0x18676a[_0x1d68d7(0x218)]((_0x1eaf73,_0x4b4386)=>{const _0x53b0f0=_0x1d68d7;_0x267679[_0x1eaf73[_0x53b0f0(0x1d5)]()]=_0x4e486d[_0x4b4386]?.['trim']()['replaceAll'](';',',')||'';}),_0x267679[_0x1d68d7(0x23f)]&&(_0x267679['unidades_precios']=parseUnidadesPrecios(_0x267679[_0x1d68d7(0x23f)])),_0x267679;});}function _0x42a4(){const _0x40acb9=['Caléndula','preventDefault','Harina\x20integral\x20orgánica','element','<p>Ningún\x20producto\x20coincide\x20con\x20la\x20búsqueda</p>','3017013ibMsWx','producto-descripcion','Imagen\x20ampliada','Shiitake\x20doble\x20extracto','Comino','imagen','Maní\x20tostado\x20con\x20sal','Semillas\x20de\x20Mijo','Té\x20verde','Barbacuá','Nutrileva\x20|\x20Levadura\x20nutricional','length','overlay-active','Harina\x20para\x20arepas','porTag','Aceite\x20de\x20oliva','unshift','Merkén','Proteína\x20vegetal','Fécula\x20de\x20mandioca','oferta-label','hay_stock','agregarAlCarrito','Ofertas🔥\x0aNovedades✨\x0aSin\x20TACC\x0aFrutos\x20secos\x0aYerba🧉\x0aChocolate🍫\x0aMiel🍯\x0aYuyitos🌿\x0aAceite\x0aCereales🍚\x0aLeches\x20vegetales\x0aSuplementos🚀\x0aLegumbres🫘\x0aHarina\x0aSemillas\x0aEspecias\x0aTecitos🍵\x0aSnacks🍪\x0aHongos🍄\x0aOrgánico🌱\x0aAgroecológico🌱\x0aMermeladas/Dulces\x0aVegano💚','shift','Arroz\x20integral\x20largo\x20fino','Coco\x20rallado','es_oferta','Ajo\x20granulado','Arveja\x20seca\x20partida','filter','Garbanzos','add','className','producto-item','Melena\x20de\x20león\x20doble\x20extracto','.tag','Cacao\x20amargo','Aceite\x20de\x20sésamo','Manzanilla','img/sin-imagen.png','flat','alt','classList','tags','Sal\x20rosa\x20del\x20himalaya','unidad','style','.producto-titulo','Arroz\x20yamaní','no-results-image','logo-organico-inline','Borrar\x20búsqueda','querySelector','toLowerCase','Semillas\x20de\x20lino\x20dorado','Pimienta\x20blanca\x20molida','Huevos\x20de\x20gallinas\x20felices','Mix\x20de\x20frutos\x20secos','map','Imagen\x20del\x20producto','Semillas\x20de\x20lino\x20marrón','then','Pasas\x20de\x20uva\x20rubias','Pasas\x20de\x20uva\x20morochas','src','contextmenu','Azúcar\x20mascabo','Fideos\x20de\x20arroz','4010885eCvxdD','4sHEQUK','Llantén','Maní\x20crudo','&times;','Orgánico','Cola\x20de\x20pavo\x20doble\x20extracto','getAttribute','Avellanas\x20con\x20chocolate','producto-titulo','click','agregarProducto','display','13080288zaaOLO','setAttribute','.producto-item','Semillas\x20de\x20zapallo','Canela\x20en\x20polvo','Pimenton\x20dulce','span','descripcion','center','stopPropagation','onclick','Pimenton\x20ahumado','tag\x20toggle-tag','block','#777','Maíz\x20piscingallo','Nuez\x20mariposa','toggle-tags','Tallarines\x20integrales','producto-precio-unidad-refe','Soja\x20texturizada\x20orgánica','Maní\x20tostado\x20sin\x20sal','Quinoa','Burrito','suggestion-item','Harina\x20de\x20garbanzo\x20sin\x20TACC','resize','El\x20carrito\x20no\x20está\x20inicializado','Soja\x20texturizada','Espirulina','Hongos\x20adaptógenos','Boldo','blur','26541828XeLlPG','filter-input-wrapper','Barrita\x20de\x20cereal','innerHTML','Cúrcuma\x20en\x20polvo','createElement','data-src','Maní\x20con\x20chocolate','.producto-descripcion','div','clear-filter','textContent','push','insertBefore','Escape','Reishi\x20doble\x20extracto','addEventListener','Aceite\x20de\x20coco','Cola\x20de\x20caballo','Semillas\x20de\x20sésamo\x20integral','Café\x20de\x20algarroba','Fécula\x20de\x20maíz\x20sin\x20TACC','contains','Harina\x20de\x20arroz','carrito','image-overlay','title','Cordy\x20doble\x20extracto','color','offsetWidth','width','Harina\x20de\x20coco','no-results-message','Miel\x20con\x20menta','img/sin-tacc.png','input','trim','parentNode','autocomplete-suggestions','Avena\x20instantánea','Semillas\x20de\x20sésamo\x20negro','keydown','https://matecitodev.github.io/productos/','paddingTop','titulo','height','Avena\x20instantánea\x20sin\x20TACC','NFD','Ambay','Chocolate\x2080%','779219Ctgkct','Tilo','Hongos\x20de\x20pino','Porotos\x20Alubia','Castañas\x20de\x20cajú','some','from','split','Avena\x20arrollada','Harina\x20de\x20garbanzo','Stevia\x20en\x20hojas','selected','filter-input','Harina\x20de\x20centeno\x20orgánica','body','48mRXMOK','Bicarbonato\x20de\x20sodio','lazy','.close-button','OFERTA','Ghee','img/organico.png','oferta','remove','producto-thumbnail','active','Semillas\x20de\x20chía','Agregar\x20al\x20carrito','Pasas\x20de\x20uva\x20con\x20chocolate','getElementById','20085qBXBVW','Chocolate\x2070%','Aceite\x20de\x20lino','items','img.lazy','dataset','Dátiles','appendChild','es-AR','producto-contenido','error','Mermelada\x20de\x20frutos\x20rojos','target','|ofertas','find','replace','Harina\x20integral\x20de\x20trigo','actualizarUI','Leche\x20de\x20almendras\x20sin\x20azúcar','Lentejas','precio','img','button','forEach','Poleo','Harina\x20integral','Error\x20al\x20cargar\x20el\x20archivo\x20CSV:','textAlign','Té\x20rojo','Creatina','Jengibre\x20en\x20polvo','logo-sin-tacc-inline','inline-block','Avellanas','Tomillo','isIntersecting','producto-tags','Higos\x20blancos','Sahumerios','value','expandido','en-carrito','Yerba','none','5767252mnqQcz','normalize','Semillas\x20de\x20girasol','Harina\x20de\x20chía','Peperina\x20hojas','Pasta\x20de\x20maní','Extracto\x20natural\x20de\x20vainilla','Maca','observe','Tomate\x20triturado','Porotos\x20Aduki','DOMContentLoaded','Miel','Cedrón\x20hojas','includes','Té\x20negro','Harina\x20de\x20almendras','querySelectorAll','unidades_precios','Curry\x20de\x20la\x20india','Maicena','Tomates\x20secos','Almendras','createTextNode','Semillas\x20de\x20sésamo\x20blanco','Sal\x20marina\x20fina','Leche\x20de\x20almendras\x20protéica\x20sin\x20azúcar','tags-container','Porotos\x20Negros','sin\x20TACC'];_0x42a4=function(){return _0x40acb9;};return _0x42a4();}function parseUnidadesPrecios(_0x22585d){const _0x26f525=_0x1d218f;if(!_0x22585d||_0x22585d==='')return[];const _0x644594=[],_0x16a944=_0x22585d['split']('|');return _0x16a944[_0x26f525(0x218)](_0x3074a1=>{const _0x714897=_0x26f525,[_0x444dd1,_0x1233e3]=_0x3074a1['split'](':');_0x444dd1&&_0x1233e3&&_0x644594[_0x714897(0x1bd)]({'unidad':_0x444dd1[_0x714897(0x1d5)](),'precio':parseInt(_0x1233e3[_0x714897(0x1d5)]())});}),_0x644594;}function filtrarProductos(){const _0x2a0bcb=_0x1d218f,_0x1e818a=normalizar(document[_0x2a0bcb(0x200)](_0x2a0bcb(0x1ef))[_0x2a0bcb(0x228)]),_0x3f7877=document[_0x2a0bcb(0x23e)](_0x2a0bcb(0x192));let _0x4caf9d=![];_0x3f7877[_0x2a0bcb(0x218)](_0x15c922=>{const _0x55fd5a=_0x2a0bcb,_0x26cf06=normalizar(_0x15c922[_0x55fd5a(0x285)](_0x55fd5a(0x280))[_0x55fd5a(0x1bc)]),_0xb1db1a=normalizar(_0x15c922[_0x55fd5a(0x285)](_0x55fd5a(0x1b9))[_0x55fd5a(0x1bc)]),_0x5bab43=normalizar(_0x15c922[_0x55fd5a(0x285)]('.producto-tags')[_0x55fd5a(0x1bc)]),_0x24acb9=_0x26cf06['includes'](_0x1e818a)||_0xb1db1a[_0x55fd5a(0x23b)](_0x1e818a)||_0x5bab43['includes'](_0x1e818a);_0x15c922[_0x55fd5a(0x27f)][_0x55fd5a(0x18f)]=_0x24acb9?'':'none';if(_0x24acb9)_0x4caf9d=!![];}),mostrarMensajeSinResultados(!_0x4caf9d);const _0x275db2=document[_0x2a0bcb(0x200)](_0x2a0bcb(0x1bb));_0x275db2[_0x2a0bcb(0x27f)]['display']=document[_0x2a0bcb(0x200)](_0x2a0bcb(0x1ef))[_0x2a0bcb(0x228)]?_0x2a0bcb(0x19d):_0x2a0bcb(0x22c);}function activarLazyLoad(){const _0x1503f7=_0x1d218f,_0x4d51e0=document[_0x1503f7(0x23e)](_0x1503f7(0x205)),_0x3fe5f6=new IntersectionObserver((_0x349b8a,_0x1adb9d)=>{const _0x4be064=_0x1503f7;_0x349b8a[_0x4be064(0x218)](_0xb4bd84=>{const _0x3d1d4c=_0x4be064;if(_0xb4bd84[_0x3d1d4c(0x224)]){const _0x42cd29=_0xb4bd84['target'];_0x42cd29[_0x3d1d4c(0x17f)]=_0x42cd29[_0x3d1d4c(0x18a)](_0x3d1d4c(0x1b7)),_0x42cd29[_0x3d1d4c(0x27b)][_0x3d1d4c(0x1fa)](_0x3d1d4c(0x1f4)),_0x1adb9d['unobserve'](_0x42cd29);}});});_0x4d51e0['forEach'](_0x455a9d=>_0x3fe5f6[_0x1503f7(0x235)](_0x455a9d));}function mostrarProductos(_0x332ecf){const _0x344450=_0x1d218f,_0x133193=document[_0x344450(0x285)]('.productos-lista');_0x133193[_0x344450(0x1b4)]='';const _0x6ba49c=document[_0x344450(0x1b6)]('div');_0x6ba49c[_0x344450(0x271)]=_0x344450(0x1ca),_0x6ba49c[_0x344450(0x1b4)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22\x22\x20alt=\x22Imagen\x20ampliada\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22close-button\x22\x20aria-label=\x22Cerrar\x20imagen\x22></button>\x0a\x20\x20\x20\x20',document[_0x344450(0x1f1)][_0x344450(0x208)](_0x6ba49c);const _0x1f786b=_0x6ba49c[_0x344450(0x285)](_0x344450(0x1f5)),_0x4343b0=()=>{const _0x5db6ea=_0x344450;document[_0x5db6ea(0x1f1)][_0x5db6ea(0x27b)]['remove']('overlay-active'),_0x6ba49c[_0x5db6ea(0x27b)][_0x5db6ea(0x1fa)](_0x5db6ea(0x1fc));},_0x2ad798=()=>{const _0x23e584=_0x344450;document[_0x23e584(0x1f1)]['classList'][_0x23e584(0x270)](_0x23e584(0x25c)),_0x6ba49c['classList'][_0x23e584(0x270)](_0x23e584(0x1fc));};_0x1f786b[_0x344450(0x1c1)]('click',_0x440024=>{const _0x450b70=_0x344450;_0x440024[_0x450b70(0x199)](),_0x4343b0();}),_0x6ba49c[_0x344450(0x1c1)](_0x344450(0x18d),_0x127ad0=>{const _0x3b8789=_0x344450;_0x127ad0['target']===_0x6ba49c&&_0x6ba49c[_0x3b8789(0x27b)]['remove'](_0x3b8789(0x1fc));}),document[_0x344450(0x1c1)](_0x344450(0x1da),_0x17c49a=>{const _0x568392=_0x344450;_0x17c49a['key']===_0x568392(0x1bf)&&_0x6ba49c['classList']['contains'](_0x568392(0x1fc))&&_0x6ba49c[_0x568392(0x27b)][_0x568392(0x1fa)](_0x568392(0x1fc));});const _0x28e6f3=[..._0x332ecf]['sort']((_0x27f32f,_0x510d97)=>{const _0x53b4ba=_0x344450,_0x2583a1=_0x27f32f['hay_stock']&&_0x27f32f[_0x53b4ba(0x265)][_0x53b4ba(0x174)]()==='no',_0x30ddcb=_0x510d97[_0x53b4ba(0x265)]&&_0x510d97[_0x53b4ba(0x265)][_0x53b4ba(0x174)]()==='no';if(_0x2583a1&&!_0x30ddcb)return 0x1;if(!_0x2583a1&&_0x30ddcb)return-0x1;return 0x0;});_0x28e6f3['forEach'](_0x309272=>{const _0x168aef=_0x344450,_0x2d74fd=document[_0x168aef(0x1b6)]('li');_0x2d74fd[_0x168aef(0x271)]=_0x168aef(0x272),_0x2d74fd[_0x168aef(0x206)]['id']=_0x309272['id'];_0x309272['hay_stock']&&_0x309272[_0x168aef(0x265)][_0x168aef(0x174)]()==='no'&&_0x2d74fd[_0x168aef(0x27b)][_0x168aef(0x270)]('sin-stock');const _0x544040=document['createElement'](_0x168aef(0x1ba));_0x544040[_0x168aef(0x271)]=_0x168aef(0x1fb);const _0x3cb5f7=document['createElement'](_0x168aef(0x216));_0x309272[_0x168aef(0x255)]?(_0x3cb5f7[_0x168aef(0x191)]('data-src',_0x309272[_0x168aef(0x255)]),_0x3cb5f7['className']=_0x168aef(0x1f4)):_0x3cb5f7[_0x168aef(0x17f)]=_0x168aef(0x278);_0x3cb5f7['alt']=_0x309272[_0x168aef(0x1dd)]||_0x168aef(0x17a),_0x544040[_0x168aef(0x1c1)](_0x168aef(0x18d),_0x4b71b6=>{const _0x11d1d0=_0x168aef;_0x4b71b6[_0x11d1d0(0x199)]();const _0x592515=_0x309272['imagen']||_0x11d1d0(0x278),_0x139afd=_0x6ba49c[_0x11d1d0(0x285)]('img');_0x139afd['src']=_0x592515,_0x139afd['alt']=_0x309272[_0x11d1d0(0x1dd)]||_0x11d1d0(0x252),_0x6ba49c['classList'][_0x11d1d0(0x270)]('active');}),_0x544040[_0x168aef(0x208)](_0x3cb5f7);const _0x75a7d=document[_0x168aef(0x1b6)](_0x168aef(0x1ba));_0x75a7d[_0x168aef(0x271)]=_0x168aef(0x20a);if(_0x309272[_0x168aef(0x26b)]&&(_0x309272[_0x168aef(0x26b)][_0x168aef(0x174)]()==='sí'||_0x309272[_0x168aef(0x26b)][_0x168aef(0x174)]()==='si')){const _0x4de74c=document[_0x168aef(0x1b6)](_0x168aef(0x196));_0x4de74c['className']=_0x168aef(0x264),_0x4de74c[_0x168aef(0x1bc)]=_0x168aef(0x1f6),_0x544040['appendChild'](_0x4de74c);}const _0x4cc5d1=document['createElement']('p');_0x4cc5d1[_0x168aef(0x271)]=_0x168aef(0x18c),_0x4cc5d1[_0x168aef(0x1bc)]=_0x309272[_0x168aef(0x1dd)];const _0x3239bd=document[_0x168aef(0x1b6)]('p');_0x3239bd['className']=_0x168aef(0x1a3),_0x3239bd['textContent']=formatearNumero(_0x309272['precio_refe']),_0x3239bd[_0x168aef(0x1bc)]+='\x20'+_0x309272['unidad_refe'];const _0x146e02=document[_0x168aef(0x1b6)]('p');_0x146e02['className']=_0x168aef(0x251);const _0x1d69a1=document[_0x168aef(0x244)](_0x309272[_0x168aef(0x197)]);_0x146e02[_0x168aef(0x208)](_0x1d69a1);_0x1d69a1[_0x168aef(0x1bc)]==''&&(_0x146e02['style'][_0x168aef(0x18f)]=_0x168aef(0x22c));if(_0x309272[_0x168aef(0x27c)]&&_0x309272[_0x168aef(0x27c)][_0x168aef(0x23b)](_0x168aef(0x24a))){const _0x30c36e=document[_0x168aef(0x1b6)](_0x168aef(0x216));_0x30c36e[_0x168aef(0x17f)]=_0x168aef(0x1d3),_0x30c36e[_0x168aef(0x27a)]='Sin\x20TACC',_0x30c36e[_0x168aef(0x1cb)]='Sin\x20TACC',_0x30c36e[_0x168aef(0x271)]=_0x168aef(0x220),_0x4cc5d1[_0x168aef(0x208)](_0x30c36e);}if(_0x309272['tags']&&_0x309272[_0x168aef(0x27c)][_0x168aef(0x23b)]('orgánico')){const _0x57739a=document[_0x168aef(0x1b6)](_0x168aef(0x216));_0x57739a[_0x168aef(0x17f)]=_0x168aef(0x1f8),_0x57739a[_0x168aef(0x27a)]=_0x168aef(0x188),_0x57739a[_0x168aef(0x1cb)]='Orgánico',_0x57739a['className']=_0x168aef(0x283),_0x4cc5d1[_0x168aef(0x208)](_0x57739a);}const _0x4f6752=document[_0x168aef(0x1b6)]('p');_0x4f6752[_0x168aef(0x271)]=_0x168aef(0x225),_0x4f6752[_0x168aef(0x1bc)]=_0x309272[_0x168aef(0x27c)]||'';_0x309272[_0x168aef(0x1f9)]&&_0x309272[_0x168aef(0x1f9)]==='sí'&&(_0x4f6752[_0x168aef(0x1bc)]=_0x4f6752[_0x168aef(0x1bc)]+_0x168aef(0x20e));if(_0x309272[_0x168aef(0x265)]&&_0x309272[_0x168aef(0x265)][_0x168aef(0x174)]()!=='no'){const _0x58dd2b=document['createElement']('button');_0x58dd2b[_0x168aef(0x271)]='boton-agregar',_0x58dd2b['innerHTML']='+',_0x58dd2b[_0x168aef(0x1cb)]=_0x168aef(0x1fe),_0x58dd2b[_0x168aef(0x206)]['id']=_0x309272['id'],window[_0x168aef(0x1c9)]&&window[_0x168aef(0x1c9)][_0x168aef(0x204)][_0x168aef(0x20f)](_0x224370=>_0x224370['id']===_0x309272['id'])&&_0x58dd2b['classList']['add'](_0x168aef(0x22a)),_0x58dd2b[_0x168aef(0x1c1)](_0x168aef(0x18d),_0x1ea61b=>{const _0x16fc5e=_0x168aef;_0x1ea61b['stopPropagation']();if(_0x58dd2b[_0x16fc5e(0x27b)][_0x16fc5e(0x1c7)](_0x16fc5e(0x22a))){window[_0x16fc5e(0x1c9)]&&window['carrito']['abrirCarrito']();return;}let _0x5690b7='',_0x1c7b4c=0x0;_0x309272[_0x16fc5e(0x23f)]&&_0x309272[_0x16fc5e(0x23f)]['length']>0x0&&(_0x5690b7=_0x309272['unidades_precios'][0x0][_0x16fc5e(0x27e)],_0x1c7b4c=_0x309272[_0x16fc5e(0x23f)][0x0][_0x16fc5e(0x215)]),agregarAlCarrito({'id':_0x309272['id'],'titulo':_0x309272[_0x16fc5e(0x1dd)],'precio':_0x1c7b4c,'unidad':_0x5690b7,'unidades_precios':_0x309272[_0x16fc5e(0x23f)]||[],'indiceUnidad':0x0},_0x58dd2b);}),_0x2d74fd[_0x168aef(0x208)](_0x58dd2b);}_0x75a7d[_0x168aef(0x208)](_0x4cc5d1),_0x75a7d['appendChild'](_0x146e02),_0x75a7d['appendChild'](_0x3239bd),_0x75a7d[_0x168aef(0x208)](_0x4f6752),_0x2d74fd[_0x168aef(0x208)](_0x544040),_0x2d74fd[_0x168aef(0x208)](_0x75a7d),_0x133193[_0x168aef(0x208)](_0x2d74fd);});}function mostrarMensajeSinResultados(_0x3d7dad){const _0x5e181b=_0x1d218f,_0x21aa34=document['querySelector']('.productos-lista');let _0x2163d2=document[_0x5e181b(0x200)]('no-results-message'),_0x375c6f=document[_0x5e181b(0x200)](_0x5e181b(0x282));_0x3d7dad?(!_0x2163d2&&(_0x2163d2=document[_0x5e181b(0x1b6)]('li'),_0x2163d2['id']=_0x5e181b(0x1d1),_0x2163d2['style'][_0x5e181b(0x21c)]=_0x5e181b(0x198),_0x2163d2[_0x5e181b(0x27f)][_0x5e181b(0x1cd)]=_0x5e181b(0x19e),_0x2163d2[_0x5e181b(0x27f)][_0x5e181b(0x1dc)]='15px',_0x2163d2[_0x5e181b(0x1b4)]=_0x5e181b(0x24f),_0x21aa34['appendChild'](_0x2163d2)),!_0x375c6f&&(_0x375c6f=document['createElement'](_0x5e181b(0x216)),_0x375c6f['id']=_0x5e181b(0x282),_0x375c6f[_0x5e181b(0x17f)]='img/tecito.png',_0x375c6f[_0x5e181b(0x27a)]='Nada\x20por\x20aquí',_0x375c6f['style'][_0x5e181b(0x18f)]='block',_0x375c6f[_0x5e181b(0x27f)]['margin']='0\x20auto',_0x375c6f[_0x5e181b(0x27f)][_0x5e181b(0x1cf)]='30vw',_0x375c6f[_0x5e181b(0x27f)][_0x5e181b(0x1de)]='auto',_0x21aa34[_0x5e181b(0x208)](_0x375c6f))):(_0x2163d2&&_0x2163d2['remove'](),_0x375c6f&&_0x375c6f[_0x5e181b(0x1fa)]());}async function inicializarSistemaDeFiltrado(){const _0x5068b2=_0x1d218f,_0x33b20a=document[_0x5068b2(0x200)](_0x5068b2(0x1ef));resetInputValue(_0x33b20a);const {inputWrapper:_0x13ec90,clearBtn:_0x1e015a}=createInputWrapperWithClearButton(_0x33b20a);setupInputEvents(_0x33b20a,_0x1e015a),setupClearButtonEvents(_0x33b20a,_0x1e015a);const _0x3abf5d=createToggleButton();}function createInputWrapperWithClearButton(_0x5b710a){const _0x1256e9=_0x1d218f,_0x41cbfb=document['createElement'](_0x1256e9(0x1ba));_0x41cbfb[_0x1256e9(0x271)]=_0x1256e9(0x1b2),_0x5b710a[_0x1256e9(0x1d6)][_0x1256e9(0x1be)](_0x41cbfb,_0x5b710a),_0x41cbfb[_0x1256e9(0x208)](_0x5b710a);const _0x4dc8e2=document[_0x1256e9(0x1b6)](_0x1256e9(0x196));return _0x4dc8e2['id']=_0x1256e9(0x1bb),_0x4dc8e2['innerHTML']=_0x1256e9(0x187),_0x4dc8e2[_0x1256e9(0x1cb)]=_0x1256e9(0x284),_0x4dc8e2[_0x1256e9(0x27f)][_0x1256e9(0x18f)]='none',_0x41cbfb[_0x1256e9(0x208)](_0x4dc8e2),{'inputWrapper':_0x41cbfb,'clearBtn':_0x4dc8e2};}function setupInputEvents(_0x4ee131,_0x590113){_0x4ee131['addEventListener']('input',()=>{const _0x41c53c=_0x54e4;filtrarProductos(),_0x590113[_0x41c53c(0x27f)][_0x41c53c(0x18f)]=_0x4ee131[_0x41c53c(0x228)]?_0x41c53c(0x19d):_0x41c53c(0x22c);});}function setupClearButtonEvents(_0x599286,_0x13adfc){const _0xb5f0d=_0x1d218f;_0x13adfc['addEventListener'](_0xb5f0d(0x18d),()=>{const _0x1d4023=_0xb5f0d;_0x599286[_0x1d4023(0x228)]='',deselectAllTags(),filtrarProductos(),_0x13adfc[_0x1d4023(0x27f)][_0x1d4023(0x18f)]=_0x1d4023(0x22c);});}function createToggleButton(){const _0x54682d=_0x1d218f,_0x44c945=document[_0x54682d(0x1b6)](_0x54682d(0x217));return _0x44c945['className']='tag\x20toggle-tag',_0x44c945[_0x54682d(0x1bc)]='+',_0x44c945['id']=_0x54682d(0x1a1),_0x44c945;}async function cargarEtiquetasDesdeCSV(){const _0x3e57c6=_0x1d218f;try{const _0x3942d5=_0x3e57c6(0x267),_0x299963=_0x3942d5['trim']()[_0x3e57c6(0x1ea)]('\x0a'),_0x58766e=_0x299963[_0x3e57c6(0x179)](_0x45d726=>_0x45d726['trim']()),_0x2750b8=document[_0x3e57c6(0x200)](_0x3e57c6(0x248));_0x2750b8[_0x3e57c6(0x1b4)]='',_0x58766e[_0x3e57c6(0x218)](_0x5bdfb5=>{const _0x221add=_0x3e57c6,_0x1388b4=document[_0x221add(0x1b6)](_0x221add(0x217));_0x1388b4[_0x221add(0x271)]='tag',_0x1388b4[_0x221add(0x1bc)]=_0x5bdfb5,_0x2750b8[_0x221add(0x208)](_0x1388b4);}),inicializarEventosTags();}catch(_0xbbcc0c){console[_0x3e57c6(0x20b)]('Error\x20al\x20cargar\x20las\x20etiquetas:',_0xbbcc0c);}}function inicializarEventosTags(){const _0x40cda6=_0x1d218f,_0x162143=document['querySelector']('.tags-container'),_0x1f8e97=document['getElementById'](_0x40cda6(0x1ef)),_0x46733c=document[_0x40cda6(0x200)](_0x40cda6(0x1a1));if(_0x46733c)_0x46733c['remove']();const _0xc8dd24=document[_0x40cda6(0x1b6)](_0x40cda6(0x217));_0xc8dd24[_0x40cda6(0x271)]=_0x40cda6(0x19c),_0xc8dd24[_0x40cda6(0x1bc)]='+',_0xc8dd24['id']=_0x40cda6(0x1a1),_0x162143[_0x40cda6(0x208)](_0xc8dd24);let _0x3ff929=Array[_0x40cda6(0x1e9)](_0x162143[_0x40cda6(0x23e)](_0x40cda6(0x274)))[_0x40cda6(0x26e)](_0x22e943=>_0x22e943['id']!==_0x40cda6(0x1a1));function _0x1d36bc(){const _0x14e0ff=_0x40cda6;_0x162143[_0x14e0ff(0x27b)]['remove'](_0x14e0ff(0x229)),_0x3ff929[_0x14e0ff(0x218)](_0x482fa6=>_0x482fa6[_0x14e0ff(0x27f)][_0x14e0ff(0x18f)]='inline-block'),_0xc8dd24[_0x14e0ff(0x27f)][_0x14e0ff(0x18f)]=_0x14e0ff(0x221),void _0x162143['offsetHeight'];const _0x716e81=_0x162143[_0x14e0ff(0x1ce)],_0x5463f4=_0x3ff929[_0x14e0ff(0x179)](_0x45f182=>({'element':_0x45f182,'width':_0x45f182[_0x14e0ff(0x1ce)]+6.5+0x1})),_0x157a63=_0xc8dd24[_0x14e0ff(0x1ce)]+6.5;let _0x8d9387=[[],[]],_0x547bdd=[0x0,0x0],_0x4c5934=[..._0x5463f4],_0x482400=!![];while(_0x4c5934['length']>0x0&&_0x547bdd[0x0]+_0x4c5934[0x0][_0x14e0ff(0x1cf)]<=_0x716e81){_0x8d9387[0x0][_0x14e0ff(0x1bd)](_0x4c5934[0x0]),_0x547bdd[0x0]+=_0x4c5934[0x0][_0x14e0ff(0x1cf)],_0x4c5934[_0x14e0ff(0x268)]();}if(_0x4c5934['length']>0x0){const _0x5dd3b0=_0x547bdd[0x1]+_0x157a63<=_0x716e81;let _0x4bf7ac=_0x716e81-_0x547bdd[0x1];while(_0x4c5934['length']>0x0&&_0x547bdd[0x1]+_0x4c5934[0x0]['width']<=_0x716e81){_0x8d9387[0x1][_0x14e0ff(0x1bd)](_0x4c5934[0x0]),_0x547bdd[0x1]+=_0x4c5934[0x0][_0x14e0ff(0x1cf)],_0x4c5934[_0x14e0ff(0x268)]();}if(_0x4c5934[_0x14e0ff(0x25b)]>0x0||!_0x5dd3b0){_0x482400=![];while(_0x547bdd[0x1]+_0x157a63>_0x716e81&&_0x8d9387[0x1][_0x14e0ff(0x25b)]>0x0){const _0x194638=_0x8d9387[0x1]['pop']();_0x547bdd[0x1]-=_0x194638[_0x14e0ff(0x1cf)],_0x4c5934[_0x14e0ff(0x260)](_0x194638);}}}_0x3ff929[_0x14e0ff(0x218)](_0x89a4bc=>{const _0x5c1654=_0x14e0ff,_0xaca55=_0x8d9387[_0x5c1654(0x279)]()[_0x5c1654(0x1e8)](_0x13de71=>_0x13de71[_0x5c1654(0x24e)]===_0x89a4bc);_0x89a4bc['style'][_0x5c1654(0x18f)]=_0xaca55?_0x5c1654(0x221):'none';}),_0xc8dd24[_0x14e0ff(0x1bc)]=_0x482400?'':'+',_0xc8dd24[_0x14e0ff(0x27f)][_0x14e0ff(0x18f)]=_0x482400?_0x14e0ff(0x22c):'inline-block';}function _0x2f1ba6(){const _0x2f508e=_0x40cda6;_0x162143[_0x2f508e(0x27b)]['add']('expandido'),_0x3ff929[_0x2f508e(0x218)](_0x1ee687=>_0x1ee687[_0x2f508e(0x27f)][_0x2f508e(0x18f)]=_0x2f508e(0x221)),_0xc8dd24['textContent']='-';}function _0x1268c3(){const _0x178364=_0x40cda6;_0x162143[_0x178364(0x27b)][_0x178364(0x1fa)](_0x178364(0x229)),_0x1d36bc();}_0xc8dd24[_0x40cda6(0x19a)]=()=>{const _0x6132d7=_0x40cda6,_0x59af4d=_0xc8dd24[_0x6132d7(0x1bc)]==='+';if(_0x59af4d)_0x2f1ba6();else _0x1268c3();},_0x3ff929[_0x40cda6(0x218)](_0x1dae63=>{const _0x4c1198=_0x40cda6;_0x1dae63[_0x4c1198(0x1c1)](_0x4c1198(0x18d),()=>{const _0x43d521=_0x4c1198;_0x3ff929[_0x43d521(0x218)](_0x42e1c3=>_0x42e1c3[_0x43d521(0x27b)]['remove'](_0x43d521(0x1ee))),_0x1f8e97['value']===_0x1dae63[_0x43d521(0x1bc)]?_0x1f8e97['value']='':(_0x1f8e97[_0x43d521(0x228)]=_0x1dae63[_0x43d521(0x1bc)],_0x1dae63[_0x43d521(0x27b)][_0x43d521(0x270)](_0x43d521(0x1ee))),filtrarProductos();});}),_0x1f8e97[_0x40cda6(0x1c1)](_0x40cda6(0x1d4),()=>{const _0x31f7d7=_0x40cda6;!_0x1f8e97[_0x31f7d7(0x206)][_0x31f7d7(0x25e)]&&_0x3ff929[_0x31f7d7(0x218)](_0x543b61=>_0x543b61[_0x31f7d7(0x27b)][_0x31f7d7(0x1fa)](_0x31f7d7(0x1ee))),delete _0x1f8e97[_0x31f7d7(0x206)][_0x31f7d7(0x25e)],filtrarProductos(),document['getElementById'](_0x31f7d7(0x1bb))['style'][_0x31f7d7(0x18f)]=_0x1f8e97[_0x31f7d7(0x228)]?_0x31f7d7(0x19d):_0x31f7d7(0x22c);});const _0x32d194=()=>requestAnimationFrame(_0x1d36bc);_0x32d194(),window[_0x40cda6(0x1c1)](_0x40cda6(0x1aa),_0x32d194);}window[_0x1d218f(0x266)]=function(_0x297fd5){const _0x4cd665=_0x1d218f;window[_0x4cd665(0x1c9)]?window['carrito'][_0x4cd665(0x18e)](_0x297fd5):console[_0x4cd665(0x20b)](_0x4cd665(0x1ab));};
+// ===== FUNCIONES DE INICIALIZACIÓN =====
+
+// Se ejecuta una vez que el documento esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    cargarYMostrarProductos().then(() => {
+        inicializarAutocomplete();
+        // Actualizar el carrito después de que los productos se hayan cargado
+        if (window.carrito) {
+            setTimeout(() => {
+                window.carrito.actualizarUI();
+            }, 300);
+        }
+    });
+    cargarEtiquetasDesdeCSV();
+    inicializarSistemaDeFiltrado();
+});
+
+// Impide que aparezca el menú contextual (clic derecho) del navegador
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+}, false);
+
+// ===== FUNCIONES AUXILIARES/HELPERS =====
+
+// Normaliza acentos, diéresis, tildes, eñes, etc. y hace trim
+function normalizar(str) {
+    return str
+        .trim() // Elimina espacios al inicio y final
+        .normalize('NFD') // Descompone los caracteres Unicode en sus componentes básicos
+        .replace(/[\u0300-\u036f]/g, '') // Elimina signos diacríticos (acentos, tildes, etc.)
+        .replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2580-\u27BF]|\uD83E[\uDD10-\uDDFF]|🫘/g, '') // Elimina emojis, símbolos y caracteres especiales
+        .toLowerCase();
+}
+
+// Formatear número como moneda argentina
+function formatearNumero(valor) {
+  const numero = parseInt(valor, 10);
+  return '$' + numero.toLocaleString('es-AR');
+}
+
+// Asegurarse de que el input de búsqueda esté vacío al cargar la página
+function resetInputValue(inputElement) {
+    inputElement.value = '';
+}
+
+// Deseleccionar todos los tags
+function deselectAllTags() {
+    document.querySelectorAll('.tags-container .tag:not(.toggle-tag)').forEach(tag => {
+        tag.classList.remove('selected');
+    });
+}
+
+// ===== FUNCIONES PRINCIPALES =====
+
+// Carga el archivo CSV desde GitHub, lo parsea y muestra los productos
+async function cargarYMostrarProductos() {
+    try {
+        const urlCSV = 'https://matecitodev.github.io/productos';
+        const respuesta = await fetch(urlCSV);
+        const textoCSV = await respuesta.text();
+
+        const productos = parsearCSV(textoCSV);
+        mostrarProductos(productos);
+        activarLazyLoad();
+    } catch (error) {
+        console.error('Error al cargar el archivo CSV:', error);
+    }
+}
+
+function inicializarAutocomplete() {
+    const inputFiltro = document.getElementById('filter-input');
+    const suggestionsContainer = document.createElement('div');
+    suggestionsContainer.className = 'autocomplete-suggestions';
+    suggestionsContainer.style.display = 'none';
+    
+    // Insertar después del input wrapper
+    inputFiltro.parentNode.parentNode.appendChild(suggestionsContainer);
+
+    inputFiltro.addEventListener('input', function() {
+        const value = this.value.trim().toLowerCase();
+        suggestionsContainer.innerHTML = '';
+        suggestionsContainer.style.display = 'none';
+
+        if (value.length < 3) return; // Mostrar sugerencias solo después de 3 caracteres
+
+        const terminosBusqueda = ['Aceite de oliva', 'Aceite de coco', 'Aceite de lino', 'Aceite de nuéz pecán', 'Aceite de sésamo', 'Ají molido', 'Ajo granulado', 'Ajo en polvo', 'Almendras', 'Ambay', 'Anis estrellado', 'Arroz yamaní', 'Arroz integral largo fino', 'Arveja seca partida', 'Avellanas', 'Avellanas con chocolate', 'Avena instantánea', 'Avena instantánea sin TACC', 'Avena arrollada', 'Azúcar mascabo', 'Barrita de cereal', 'Bicarbonato de sodio', 'Boldo', 'Bolsita para hacer leches vegetales', 'Burrito', 'Cacao amargo', 'Café de algarroba', 'Caléndula', 'Canela en polvo', 'Galletitas', 'Carqueja', 'Castañas de cajú', 'Cedrón hojas', 'Chimichurri', 'Chocolate 60%', 'Chocolate 70%', 'Chocolate 80%', 'Chocolate sin azúcar agregada', 'Coco rallado', 'Cola de caballo', 'Comino', 'Creatina', 'Cúrcuma en polvo', 'Curry de la india', 'Dátiles', 'Espirulina', 'Extracto natural de vainilla', 'Fécula de mandioca', 'Fideos de arroz', 'Tallarines integrales', 'Fideos codito con harina de garbanzos', 'Galletas de arroz', 'Garbanzos', 'Ghee', 'Harina integral', 'Harina integral orgánica', 'Harina de centeno orgánica', 'Harina de garbanzo', 'Harina de garbanzo sin TACC', 'Harina para arepas', 'Harina de almendras', 'Harina de chía', 'Harina de lino', 'Harina de arroz', 'Harina de arroz sin TACC', 'Harina de algarroba', 'Harina de coco', 'Harina integral de trigo', 'Hibiscus', 'Higos blancos', 'Hongos de pino', 'Hongos adaptógenos', 'Melena de león doble extracto', 'Reishi doble extracto', 'Cordy doble extracto', 'Shiitake doble extracto', 'Cola de pavo doble extracto', 'Huevos de gallinas felices', 'Jengibre en polvo', 'Laurel hojas', 'Lavanda flores', 'Leche de nuez pecan sin azúcar', 'Leche de almendras protéica sin azúcar', 'Leche de almendras sin azúcar', 'Lentejas', 'Nutrileva | Levadura nutricional', 'Llantén', 'Maca', 'Maicena', 'Fécula de maíz', 'Fécula de maíz sin TACC', 'Maíz piscingallo', 'Maní tostado sin sal', 'Maní tostado con sal', 'Maní crudo', 'Maní con chocolate', 'Manzanilla', 'Marcela', 'Menta', 'Merkén', 'Mermelada de frutos rojos', 'Miel', 'Miel con jengibre', 'Miel con menta', 'Semillas de Mijo', 'Mix de frutos secos', 'Nuez moscada', 'Nuez mariposa', 'Nuez pecán', 'Orégano', 'Pasas de uva morochas', 'Pasas de uva rubias', 'Pasas de uva con chocolate', 'Pasta de maní', 'Tahini', 'Peperina hojas', 'Peras deshidratadas', 'Pimenton ahumado', 'Pimenton dulce', 'Pimienta negra molida', 'Pimienta blanca molida', 'Poleo', 'Polvo de hornear', 'Porotos Mung', 'Porotos Negros', 'Porotos Aduki', 'Porotos Alubia', 'Proteína vegetal', 'Provenzal', 'Quinoa', 'Romero', 'Sahumerios', 'Sal marina fina', 'Sal marina gruesa', 'Sal rosa del himalaya', 'Semillas de chía', 'Semillas de girasol', 'Semillas de lino marrón', 'Semillas de sésamo blanco', 'Semillas de sésamo integral', 'Semillas de sésamo negro', 'Semillas de zapallo', 'Semillas de lino dorado', 'Soja texturizada orgánica', 'Soja texturizada', 'Stevia en hojas', 'Pasta de dientes Sudanta', 'Té negro', 'Té rojo', 'Té verde', 'Tilo', 'Tofu', 'Tomates secos', 'Tomate triturado', 'Tomillo', 'Yerba', 'Barbacuá'];
+
+        const suggestions = terminosBusqueda.filter(nombre =>
+            normalizar(nombre).includes(normalizar(value))
+        ).slice(0, 5); // Máximo 5 sugerencias
+
+        if (suggestions.length > 0) {
+            suggestionsContainer.style.display = 'block';
+            suggestions.forEach(suggestion => {
+                const div = document.createElement('div');
+                div.className = 'suggestion-item';
+                div.textContent = suggestion;
+                div.addEventListener('click', () => {
+                    inputFiltro.value = suggestion;
+                    filtrarProductos();
+                    suggestionsContainer.style.display = 'none';
+                });
+                suggestionsContainer.appendChild(div);
+            });
+        }
+    });
+
+    // Ocultar sugerencias al hacer clic fuera
+    document.addEventListener('click', (e) => {
+        if (!suggestionsContainer.contains(e.target) && e.target !== inputFiltro) {
+            suggestionsContainer.style.display = 'none';
+        }
+    });
+
+    inputFiltro.addEventListener('blur', () => {
+        // Pequeño delay para permitir el clic en las sugerencias
+        setTimeout(() => {
+            suggestionsContainer.style.display = 'none';
+        }, 200);
+    });
+}
+
+// Convierte el texto de un CSV en un array de objetos
+function parsearCSV(csv) {
+    const csvSeparator = ',';
+    const filas = csv.split('\n').filter(fila => fila.trim() !== '');
+    const encabezados = filas[0].split(csvSeparator);
+
+    return filas.slice(1).map(fila => {
+        const valores = fila.split(csvSeparator);
+        const producto = {};
+
+        encabezados.forEach((columna, i) => {
+            // En los datos originales, las comas son remplazads por punto y comas al subirse a github
+            producto[columna.trim()] = valores[i]?.trim().replaceAll(';', ',') || '';
+        });
+
+        // Parsear las unidades y precios
+        if (producto.unidades_precios) {
+            producto.unidades_precios = parseUnidadesPrecios(producto.unidades_precios);
+        }
+
+        return producto;
+    });
+}
+
+// Función para parsear el formato de unidades y precios
+function parseUnidadesPrecios(unidadesPreciosStr) {
+    if (!unidadesPreciosStr || unidadesPreciosStr === '') return [];
+    
+    const unidadesPrecios = [];
+    const partes = unidadesPreciosStr.split('|');
+    
+    partes.forEach(parte => {
+        const [unidad, precio] = parte.split(':');
+        if (unidad && precio) {
+            unidadesPrecios.push({
+                unidad: unidad.trim(),
+                precio: parseInt(precio.trim())
+            });
+        }
+    });
+    
+    return unidadesPrecios;
+}
+
+// Filtra los productos por texto ingresado en el input
+function filtrarProductos() {
+    const texto = normalizar(document.getElementById('filter-input').value);
+    const productos = document.querySelectorAll('.producto-item');
+    let hayCoincidencias = false;
+
+    productos.forEach(item => {
+        const titulo = normalizar(item.querySelector('.producto-titulo').textContent);
+        const descripcion = normalizar(item.querySelector('.producto-descripcion').textContent);
+        const tags = normalizar(item.querySelector('.producto-tags').textContent);
+
+        const visible = titulo.includes(texto) || descripcion.includes(texto) || tags.includes(texto);
+        item.style.display = visible ? '' : 'none';
+
+        if (visible) hayCoincidencias = true;
+    });
+
+    mostrarMensajeSinResultados(!hayCoincidencias);
+
+    const clearBtn = document.getElementById('clear-filter');
+    clearBtn.style.display = document.getElementById('filter-input').value ? 'block' : 'none';
+}
+
+// Carga las imágenes cuando están por entrar en pantalla
+function activarLazyLoad() {
+    const imagenes = document.querySelectorAll('img.lazy');
+
+    const observer = new IntersectionObserver((entradas, observer) => {
+        entradas.forEach(entrada => {
+            if (entrada.isIntersecting) {
+                const img = entrada.target;
+                img.src = img.getAttribute('data-src');
+                img.classList.remove('lazy');
+                observer.unobserve(img);
+            }
+        });
+    });
+
+    imagenes.forEach(img => observer.observe(img));
+}
+
+// ===== FUNCIONES DE UI/INTERFAZ =====
+
+// Muestra la lista de productos en el HTML
+function mostrarProductos(productos) {
+    const contenedor = document.querySelector('.productos-lista');
+    contenedor.innerHTML = ''; // Limpiar contenido anterior
+
+    // Crear overlay para imágenes a pantalla completa
+    const overlay = document.createElement('div');
+    overlay.className = 'image-overlay';
+    overlay.innerHTML = `
+        <img src="" alt="Imagen ampliada">
+        <button class="close-button" aria-label="Cerrar imagen"></button>
+    `;
+    document.body.appendChild(overlay);
+
+    const closeButton = overlay.querySelector('.close-button');
+
+    // Función para cerrar el overlay
+    const cerrarOverlay = () => {
+        document.body.classList.remove('overlay-active');
+        overlay.classList.remove('active');
+    };
+
+    // Función para abrir el overlay
+    const abrirOverlay = () => {
+        document.body.classList.add('overlay-active');
+        overlay.classList.add('active');
+    };
+
+    // Eventos para cerrar
+    closeButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        cerrarOverlay();
+    });
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) { // Solo cerrar si se hace clic fuera de la imagen
+            overlay.classList.remove('active');
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            overlay.classList.remove('active');
+        }
+    });
+
+    // Ordenar productos: primero los con stock, luego los sin stock
+    const productosOrdenados = [...productos].sort((a, b) => {
+        const aSinStock = a.hay_stock && a.hay_stock.toLowerCase() === "no";
+        const bSinStock = b.hay_stock && b.hay_stock.toLowerCase() === "no";
+
+        if (aSinStock && !bSinStock) return 1;    // a va después de b
+        if (!aSinStock && bSinStock) return -1;   // a va antes de b
+        return 0;                                 // mantener orden original
+    });
+
+    productosOrdenados.forEach(producto => {
+        const item = document.createElement('li');
+        item.className = 'producto-item';
+        item.dataset.id = producto.id;
+
+        // Añadir clase sin-stock si no hay stock
+        if (producto.hay_stock && producto.hay_stock.toLowerCase() === "no") {
+            item.classList.add('sin-stock');
+        }
+
+        // Imagen del producto
+        const thumbnailDiv = document.createElement('div');
+        thumbnailDiv.className = 'producto-thumbnail';
+
+        const imagen = document.createElement('img');
+        if (producto.imagen) {
+            imagen.setAttribute('data-src', producto.imagen);
+            imagen.className = 'lazy';
+        } else {
+            imagen.src = 'img/sin-imagen.png';
+        }
+        imagen.alt = producto.titulo || 'Imagen del producto';
+
+        // Agregar evento para mostrar imagen a pantalla completa
+        thumbnailDiv.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const imgSrc = producto.imagen || 'img/sin-imagen.png';
+            const overlayImg = overlay.querySelector('img');
+            overlayImg.src = imgSrc;
+            overlayImg.alt = producto.titulo || 'Imagen ampliada';
+            overlay.classList.add('active');
+        });
+
+        thumbnailDiv.appendChild(imagen);
+
+        const contenidoDiv = document.createElement('div');
+        contenidoDiv.className = 'producto-contenido';
+
+        // Cartel de oferta
+        if (producto.es_oferta && (producto.es_oferta.toLowerCase() === 'sí' || producto.es_oferta.toLowerCase() === 'si')) {
+            const ofertaLabel = document.createElement('span');
+            ofertaLabel.className = 'oferta-label';
+            ofertaLabel.textContent = 'OFERTA';
+            thumbnailDiv.appendChild(ofertaLabel);
+        }
+
+        // Título
+        const titulo = document.createElement('p');
+        titulo.className = 'producto-titulo';
+        titulo.textContent = producto.titulo;
+
+        // Precio y unidad de referencia
+        const precio_unidad_refe = document.createElement('p');
+        precio_unidad_refe.className = 'producto-precio-unidad-refe';
+        precio_unidad_refe.textContent = formatearNumero(producto.precio_refe);
+        precio_unidad_refe.textContent += ' (' + producto.unidad_refe + ')';
+
+        // Descripción del producto
+        const descripcion = document.createElement('p');
+        descripcion.className = 'producto-descripcion';
+        const textoDescripcion = document.createTextNode(producto.descripcion);
+        descripcion.appendChild(textoDescripcion);
+        if (textoDescripcion.textContent == '') {
+            descripcion.style.display = 'none';
+        }
+
+        // Logo Sin TACC
+        if (producto.tags && producto.tags.includes('sin TACC')) {
+            const logo = document.createElement('img');
+            logo.src = 'img/sin-tacc.png';
+            logo.alt = 'Sin TACC';
+            logo.title = 'Sin TACC';
+            logo.className = 'logo-sin-tacc-inline';
+            titulo.appendChild(logo);
+        }
+
+        // Logo orgánico
+        if (producto.tags && producto.tags.includes('orgánico')) {
+            const logo = document.createElement('img');
+            logo.src = 'img/organico.png';
+            logo.alt = 'Orgánico';
+            logo.title = 'Orgánico';
+            logo.className = 'logo-organico-inline';
+            titulo.appendChild(logo);
+        }
+
+        // Tags (no visibles)
+        const tags = document.createElement('p');
+        tags.className = 'producto-tags';
+        tags.textContent = producto.tags || '';
+
+        if (producto.oferta && producto.oferta === 'sí') {
+            tags.textContent = tags.textContent + '|ofertas'
+        }
+
+        // Botón para agregar al carrito
+        if (producto.hay_stock && producto.hay_stock.toLowerCase() !== "no") {
+            const botonAgregar = document.createElement('button');
+            botonAgregar.className = 'boton-agregar';
+            botonAgregar.innerHTML = '+';
+            botonAgregar.title = 'Agregar al carrito';
+            botonAgregar.dataset.id = producto.id;
+
+            // Verificar si el producto ya está en el carrito
+            if (window.carrito && window.carrito.items.find(item => item.id === producto.id)) {
+                botonAgregar.classList.add('en-carrito');
+            }
+            
+            botonAgregar.addEventListener('click', (e) => {
+                e.stopPropagation();
+
+                // Si ya está en el carrito, abrir el carrito en lugar de agregar otro
+                if (botonAgregar.classList.contains('en-carrito')) {
+                    if (window.carrito) {
+                        window.carrito.abrirCarrito();
+                    }
+                    return;
+                }
+
+                // Obtener la primera unidad y precio por defecto
+                let unidadSeleccionada = '';
+                let precioSeleccionado = 0;
+                
+                if (producto.unidades_precios && producto.unidades_precios.length > 0) {
+                    unidadSeleccionada = producto.unidades_precios[0].unidad;
+                    precioSeleccionado = producto.unidades_precios[0].precio;
+                }
+
+                agregarAlCarrito({
+                    id: producto.id,
+                    titulo: producto.titulo,
+                    precio: precioSeleccionado,
+                    unidad: unidadSeleccionada,
+                    unidades_precios: producto.unidades_precios || [],
+                    indiceUnidad: 0 // Índice de la unidad seleccionada
+                }, botonAgregar); // Pasar el botón como segundo parámetro
+            });
+            item.appendChild(botonAgregar);
+        }
+
+        contenidoDiv.appendChild(titulo);
+        contenidoDiv.appendChild(descripcion);
+        contenidoDiv.appendChild(precio_unidad_refe);
+        contenidoDiv.appendChild(tags);
+
+        // Ensamblar la imagen y el contenido
+        item.appendChild(thumbnailDiv);
+        item.appendChild(contenidoDiv);
+
+        contenedor.appendChild(item);
+    });
+}
+
+// Muestra u oculta el mensaje de 'Sin resultados'
+function mostrarMensajeSinResultados(mostrar) {
+    const contenedor = document.querySelector('.productos-lista');
+    let mensaje = document.getElementById('no-results-message');
+    let imagen = document.getElementById('no-results-image');
+
+    if (mostrar) {
+        if (!mensaje) {
+            mensaje = document.createElement('li');
+            mensaje.id = 'no-results-message';
+            mensaje.style.textAlign = 'center';
+            mensaje.style.color = '#777';
+            mensaje.style.paddingTop = '15px';
+            mensaje.innerHTML = `<p>Ningún producto coincide con la búsqueda</p>`;
+            contenedor.appendChild(mensaje);
+        }
+        if (!imagen) {
+            imagen = document.createElement('img');
+            imagen.id = 'no-results-image';
+            imagen.src = 'img/tecito.png';
+            imagen.alt = 'Nada por aquí';
+            imagen.style.display = 'block';
+            imagen.style.margin = '0 auto'; // Esto centra horizontalmente
+            imagen.style.width = '30vw';
+            imagen.style.height = 'auto';
+            contenedor.appendChild(imagen);
+        }
+    } else {
+        if (mensaje) {
+            mensaje.remove();
+        }
+        if (imagen) {
+            imagen.remove();
+        }
+    }
+}
+
+// ===== FUNCIONES DE CONFIGURACIÓN DEL SISTEMA DE FILTRADO =====
+
+// Configura el filtro de búsqueda y el botón de borrado del input de búsqueda
+async function inicializarSistemaDeFiltrado() {
+    const inputFiltro = document.getElementById('filter-input');
+    resetInputValue(inputFiltro);
+    const { inputWrapper, clearBtn } = createInputWrapperWithClearButton(inputFiltro);
+    setupInputEvents(inputFiltro, clearBtn);
+    setupClearButtonEvents(inputFiltro, clearBtn);
+    const toggleBtn = createToggleButton();
+}
+
+// Crear un wrapper para el input y un botón de limpieza dentro del wrapper
+function createInputWrapperWithClearButton(inputElement) {
+    const inputWrapper = document.createElement('div');
+    inputWrapper.className = 'filter-input-wrapper';
+
+    // Reemplazar el input con el wrapper que contiene el input
+    inputElement.parentNode.insertBefore(inputWrapper, inputElement);
+    inputWrapper.appendChild(inputElement);
+
+    // Crear botón de limpieza
+    const clearBtn = document.createElement('span');
+    clearBtn.id = 'clear-filter';
+    clearBtn.innerHTML = '&times;';
+    clearBtn.title = 'Borrar búsqueda';
+    clearBtn.style.display = 'none';
+
+    inputWrapper.appendChild(clearBtn);
+
+    return { inputWrapper, clearBtn };
+}
+
+// Configurar eventos del input de búsqueda
+function setupInputEvents(inputElement, clearButton) {
+    inputElement.addEventListener('input', () => {
+        filtrarProductos();
+        clearButton.style.display = inputElement.value ? 'block' : 'none';
+    });
+}
+
+// Configurar eventos del botón de limpieza
+function setupClearButtonEvents(inputElement, clearButton) {
+    clearButton.addEventListener('click', () => {
+        inputElement.value = '';
+        deselectAllTags();
+        filtrarProductos();
+        clearButton.style.display = 'none';
+    });
+}
+
+// Crear botón toggle
+function createToggleButton() {
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'tag toggle-tag';
+    toggleBtn.textContent = '+';
+    toggleBtn.id = 'toggle-tags';
+    return toggleBtn;
+}
+
+// ===== FUNCIONES DE GESTIÓN DE ETIQUETAS =====
+
+async function cargarEtiquetasDesdeCSV() {
+    //const urlCSV = 'https://raw.githubusercontent.com/dietetica/datos/main/etiquetas';
+    try {
+        //const respuesta = await fetch(urlCSV);
+        //const texto = await respuesta.text();
+        const texto = `Ofertas🔥
+Novedades✨
+Sin TACC
+Frutos secos
+Yerba🧉
+Chocolate🍫
+Miel🍯
+Yuyitos🌿
+Aceite
+Cereales🍚
+Leches vegetales
+Suplementos🚀
+Legumbres🫘
+Harina
+Semillas
+Especias
+Tecitos🍵
+Snacks🍪
+Hongos🍄
+Orgánico🌱
+Agroecológico🌱
+Mermeladas/Dulces
+Vegano💚`;
+
+        const lineas = texto.trim().split('\n');
+        const etiquetas = lineas.map(l => l.trim());
+
+        const contenedor = document.getElementById('tags-container');
+        contenedor.innerHTML = '';
+
+        etiquetas.forEach(etiqueta => {
+            const boton = document.createElement('button');
+            boton.className = 'tag';
+            boton.textContent = etiqueta;
+            contenedor.appendChild(boton);
+        });
+
+        inicializarEventosTags();
+
+    } catch (error) {
+        console.error('Error al cargar las etiquetas:', error);
+    }
+}
+
+function inicializarEventosTags() {
+    const tagsContainer = document.querySelector('.tags-container');
+    const inputFiltro = document.getElementById('filter-input');
+
+    // Eliminar botón toggle si existe
+    const oldToggle = document.getElementById('toggle-tags');
+    if (oldToggle) oldToggle.remove();
+
+    // Crear botón toggle
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'tag toggle-tag';
+    toggleBtn.textContent = '+';
+    toggleBtn.id = 'toggle-tags';
+    tagsContainer.appendChild(toggleBtn);
+
+    // Recolectar tags (excluye toggle por ahora)
+    let tags = Array.from(tagsContainer.querySelectorAll('.tag')).filter(tag => tag.id !== 'toggle-tags');
+
+    function calcularLineas() {
+        // Resetear estado
+        tagsContainer.classList.remove('expandido');
+        tags.forEach(tag => tag.style.display = 'inline-block');
+        toggleBtn.style.display = 'inline-block';
+
+        // Forzar cálculo de layout
+        void tagsContainer.offsetHeight;
+
+        const containerWidth = tagsContainer.offsetWidth;
+        const tagElements = tags.map(tag => ({
+            element: tag,
+            width: tag.offsetWidth + 6.5 + 1 // width + gap + changui
+        }));
+
+        const toggleWidth = toggleBtn.offsetWidth + 6.5;
+        let lines = [[], []];
+        let lineWidths = [0, 0];
+        let remainingTags = [...tagElements];
+        let allTagsVisible = true;
+
+        // Llenar primera línea
+        while (remainingTags.length > 0 && lineWidths[0] + remainingTags[0].width <= containerWidth) {
+            lines[0].push(remainingTags[0]);
+            lineWidths[0] += remainingTags[0].width;
+            remainingTags.shift();
+        }
+
+        // Llenar segunda línea (incluyendo el botón si es necesario)
+        if (remainingTags.length > 0) {
+            // Intentar agregar el botón a la segunda línea
+            const lastLineWithButton = lineWidths[1] + toggleWidth <= containerWidth;
+
+            // Calcular espacio restante
+            let remainingWidth = containerWidth - lineWidths[1];
+
+            // Agregar tags que quepan
+            while (remainingTags.length > 0 && lineWidths[1] + remainingTags[0].width <= containerWidth) {
+                lines[1].push(remainingTags[0]);
+                lineWidths[1] += remainingTags[0].width;
+                remainingTags.shift();
+            }
+
+            // Si quedan tags, mostrar el botón
+            if (remainingTags.length > 0 || !lastLineWithButton) {
+                allTagsVisible = false;
+                // Retroceder tags hasta que quepa el botón
+                while (lineWidths[1] + toggleWidth > containerWidth && lines[1].length > 0) {
+                    const removedTag = lines[1].pop();
+                    lineWidths[1] -= removedTag.width;
+                    remainingTags.unshift(removedTag);
+                }
+            }
+        }
+
+        // Aplicar visibilidad
+        tags.forEach(tag => {
+            const isVisible = lines.flat().some(item => item.element === tag);
+            tag.style.display = isVisible ? 'inline-block' : 'none';
+        });
+
+        // Configurar botón toggle
+        toggleBtn.textContent = allTagsVisible ? '' : '+';
+        toggleBtn.style.display = allTagsVisible ? 'none' : 'inline-block';
+    }
+
+    function expandirTags() {
+        tagsContainer.classList.add('expandido');
+        tags.forEach(tag => tag.style.display = 'inline-block');
+        toggleBtn.textContent = '-';
+    }
+
+    function colapsarTags() {
+        tagsContainer.classList.remove('expandido');
+        calcularLineas();
+    }
+
+    toggleBtn.onclick = () => {
+        const expandido = toggleBtn.textContent === '+';
+        if (expandido) expandirTags();
+        else colapsarTags();
+    };
+
+    tags.forEach(tag => {
+        tag.addEventListener('click', () => {
+            // Remover clase selected de todos los tags primero
+            tags.forEach(t => t.classList.remove('selected'));
+
+            // Alternar selección solo si el tag coincide con el input
+            if (inputFiltro.value === tag.textContent) {
+                inputFiltro.value = '';
+            } else {
+                inputFiltro.value = tag.textContent;
+                tag.classList.add('selected');
+            }
+
+            filtrarProductos();
+        });
+    });
+
+    inputFiltro.addEventListener('input', () => {
+        // Solo deseleccionar tags si el usuario está escribiendo (no cuando se establece por tag)
+        if (!inputFiltro.dataset.porTag) {
+            tags.forEach(t => t.classList.remove('selected'));
+        }
+        delete inputFiltro.dataset.porTag;
+
+        filtrarProductos();
+        document.getElementById('clear-filter').style.display = inputFiltro.value ? 'block' : 'none';
+    });
+
+    // Ejecutar al inicio y al redimensionar
+    const recalcular = () => requestAnimationFrame(calcularLineas);
+    recalcular();
+    window.addEventListener('resize', recalcular);
+}
+
+// ===== FUNCIÓN GLOBAL PARA AGREGAR AL CARRITO =====
+window.agregarAlCarrito = function(producto) {
+    if (window.carrito) {
+        window.carrito.agregarProducto(producto);
+    } else {
+        console.error('El carrito no está inicializado');
+    }
+};
